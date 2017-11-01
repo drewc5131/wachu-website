@@ -166,6 +166,10 @@ footer {
     text-align: center;
     font-size: 10px;
     animation: none !important;
+    margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+    left: 0;
+    right: 0;
+    position: fixed;
 }
 
 

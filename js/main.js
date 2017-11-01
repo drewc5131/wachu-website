@@ -122,7 +122,7 @@ $(document).ready(function () {
         loadingParentElement: 'body',
         loadingClass: 'animsition-loading',
         loadingInner: '',
-        timeout: true,
+        timeout: false,
         timeoutCountdown: 1000,
         onLoadEvent: true,
         browser: ['animation-duration', '-webkit-animation-duration'],
