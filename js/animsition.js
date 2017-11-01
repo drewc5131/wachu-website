@@ -154,7 +154,7 @@
       var _this = this;
       var $this = $(this);
       var options = $this.data(namespace).options;
-        document.getElementById("loader").style.display = "none";
+        document.getElementById("loader").style.display = "block";
 
       __.settings.timer = setTimeout(function(){
         __.in.call(_this);
