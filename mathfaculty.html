@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <title>Mathematics Faculty</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.css" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCol" aria-controls="navbarCol" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="assets/wachusett.png" width="50px" class="navbar-brand" />
+            <div class="collapse navbar-collapse" id="navbarCol">
+                <div class="navbar-nav">
+
+                    <a href="index.html" class="navbarbutton">Home</a>
+                    <div class="btn-group">
+                        <a class="navbarbutton dropdown-toggle" href="#" role="button" id="acedemicsDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Acedemics</a>
+                        <!--Acedemics-->
+                        <div class="dropdown-menu" style="border-radius: 0px; background-color: #f8f9fa; border: 0px" aria-labelledby="acedemicsDrop">
+                            <h6 class="dropdown-header">Acedemics</h6>
+                            <a class="dropdown-item navbarbutton navbarbutton-cur" href="mathfaculty.html">Math</a>
+                            <a class="dropdown-item navbarbutton" href="socialstudiesfaculty.html">Social Studies</a>
+                        </div>
+                    </div>
+                    <a href="clubs.html" class="navbarbutton">Clubs and Activities </a>
+                    <a href="http://ps.wrsd.net/" class="navbarbutton">PowerSchool Login</a>
+                    <a href="staffdirectory.html" class="navbarbutton">Staff Directory</a>
+                    <a href="morelinks.html" class="navbarbutton animsition-link">More Links</a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br />
+    <br />
+    <div class="wachu-green-header">
+        <!--Header: wachu-green-header fills the background with the same green as is in the wrhsheader920.jpg
+            to make it seamless across all widths-->
+        <div class="container">
+            <img src="assets/wrhsheader920.jpg" width="100%">
+        </div>
+    </div>
+    <div id="loader" class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
+    <div id="content" class="animsition">
+
+        <br />
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 order-sm-1 order-md-2 homeinfo">
+                    <h1 style="text-align: center">WRHS Mathematics</h1>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-6 col-sm-12 upcoming-events" id="socialStudiesClasses">
+                    <h5 style="text-align: center">Math Classes</h5>
+                    <!--All classes (not complete)-->
+                    <div>
+                        <h6>Lower School</h6>
+                        <ul>
+                            <li>
+                                <a href="#algebra1">Algebra 1</a>
+                            </li>
+                            <li>
+                                <a href="#fundamentalsAlgebra1">Fundamentals of Algebra 1</a>
+                            </li>
+                            <li>
+                                <a href="#geometry">Geometry</a>
+                            </li>
+                            <li>
+                                <a href="#fundamentalsGeometry">Fundamentals of Geometry</a>
+                            </li>
+                            <li>
+                                <a href="#algebra2">Algebra 2</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr />
+
+                    <div>
+                        <h6>Upper School</h6>
+                        <ul>
+                            <li><a href="#algebra2">Algebra 2</a></li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-md-6 col-sm-12 upcoming-events" id="socialStudiesFaculty">
+                    <h5 style="text-align: center">Math Facility</h5>
+                    <ul>
+                        <!--Teacher Sites-->
+                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/bailey/">Melissa Bailey</a></li>
+                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/mrs-beccia-s-website/">Ellen Beccia</a></li>
+                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/berman/">Zachary Berman</a></li>
+                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/chevrette/">Shawn Chevrette</a></li>
+                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/jennifercollard/">Jennifer Collard</a></li>
+                        <li><a class="link">Samantha Cornwell</a></li>
+                        <li><a class="link">Jessica Dauost</a></li>
+                        <li><a class="link">Kaitlyn Foucher</a></li>
+                        <li><a class="link">Maura Goddard</a></li>
+                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/keene/">Sarah Keene</a></li>
+                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/mr-kodys-classroom/home">Jeffrey Kodys</a></li>
+                        <li><a class="link">Matt Lane</a></li>
+                        <li><a class="link">Nate Lenhart</a></li>
+                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/ms-mitchellwrhs/">Kathleen Mitchell</a></li>
+                        <li><a class="link" href="https://sites.google.com/wrsd.net/kpearson/">Katie Pearson</a></li>
+                        <li><a class="link" href="https://sites.google.com/wrsd.net/mrsross/">Myla Ross</a></li>
+                        <li><a class="link">Lynn Swidey</a> <small><a class="link" href="http://www.wrsd.net/wrhs/documents/Academics/SwideyAlg1CPsyll2016.pdf">Algebra 1</a> <a class="link" href="http://www.wrsd.net/wrhs/documents/Academics/SwideyGeoHsyll2016%20.pdf">Geometry</a> <a class="link" href="http://www.wrsd.net/wrhs/documents/Academics/SwideyPreCalcsyll2016.pdf">Pre-Calculus</a></small></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 homeinfo">
+                </div>
+
+            </div>
+
+        </div>
+
+        <br />
+        <footer class="wachu-green-header">
+            <h5 class="footerText">Wachusett Regional High School</h5>
+            <h6 class="footerText">1401 Main Street | Holden MA 01520 | Phone: 508-829-6771 | Fax: 508-829-4895</h6>
+            <p class="footerText">Principal, William P. <span onclick="togglememe()">Beando</span></p>
+        </footer>
+    </div>
+</body>
+</html>

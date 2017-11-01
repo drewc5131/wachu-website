@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <title>WRHS Home</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/js.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.css" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCol" aria-controls="navbarCol" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="assets/wachusett.png" width="50px" class="navbar-brand" />
+
+            <div class="collapse navbar-collapse" id="navbarCol">
+                <div class="navbar-nav">
+
+                    <a href="index.html" class="navbarbutton navbarbutton-cur animsition-link">Home</a>
+                    <div class="nav-item btn-group-vertical dropdown">
+                        <a class="navbarbutton dropdown-toggle" href="#" role="dropdown" id="acedemicsDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Acedemics</a>
+                        <!--Acedemics-->
+                        <!--Dropdown menu for ACEDEMICS-->
+
+                        <div class="dropdown-menu" aria-labelledby="acedemicsDrop">
+                            <a class="dropdown-item navbarbutton animsition-link" href="mathfaculty.html">Math</a>
+                            <a class="dropdown-item navbarbutton animsition-link" href="socialstudiesfaculty.html">Social Studies</a>
+                        </div>
+                    </div>
+                    <a href="clubs.html" class="navbarbutton animsition-link">Clubs and Activities </a>
+                    <a href="http://ps.wrsd.net/" class="navbarbutton animsition-link">PowerSchool Login</a>
+                    <a href="staffdirectory.html" class="navbarbutton animsition-link">Staff Directory</a>
+                    <a href="morelinks.html" class="navbarbutton animsition-link">More Links</a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br /><br />
+    <div class="wachu-green-header">
+        <!--Header: wachu-green-header fills the background with the same green as is in the wrhsheader920.jpg
+            to make it seamless across all widths-->
+        <div class="container">
+            <img src="assets/wrhsheader920.jpg" width="100%">
+        </div>
+    </div>
+    <div id="loader" class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
+    <div id="content" class="animsition">
+
+
+        <h1 id="banner" class="newsbanner wachu-green">10/16/2017 | White Day | D Block</h1>
+        <br />
+
+        <div class="container">
+
+            <div class="row">
+
+
+                <div class="col-md-6 order-sm-1 order-md-2 homeinfo">
+                    <h1 style="text-align: center">Mission Statement</h1>
+                    <em>
+                        <p>"Wachusett Regional High School is committed to an educational process that fosters independence and responsibility in our students. By offering diverse, challenging, academic programs and rich co-curricular activities, WRHS strives to provide students with the skills and knowledge to achieve their potential as life-long learners."</p>
+                    </em>
+
+                    <p>We work toward achieving this mission by promoting our core values of Citizenship and Responsibility, Collaboration, Communication, Critical Thinking and Problem Solving, and Creativity and Innovation.</p>
+
+                    <hr class="upcoming-events-separator" />
+                    <h3 style="text-align: center">Please note that on Friday, October 13, the schedule is:</h3>
+                    <div style="text-align: center">
+                        <p>E, F, G, A, <strong>C, B, Activity (Pep Rally)</strong></p>
+                    </div>
+                    
+                    <hr class="upcoming-events-separator" />
+                    
+                    <h1 class="upcoming-events-header" onclick="window.location.href = 'http://www.wrsd.net/wrhs/announcements.cfm'" style="text-align: center; cursor: pointer">Morning Announcements</h1>
+                    <h3 style="text-align: center">October 6, 2017</h3>
+                    <p><strong>Attention Seniors, please submit senior portraits</strong> to the Class of 2018 Google Classroom if you have not done so already. The last date to submit photos is Friday, October 20th.  Any photos that are submitted after this date will not be in the yearbook.  Directions for accessing the Google Classroom are on the Class of 2018 page on the Wachusett website.</p>
+                    <p><strong>Attention Seniors, please check the Yearbook Google Classroom</strong> for more information on Senior Quptes. All personal quotes are due by Tuesday, October 10th.</p>
+                </div>
+
+                <!--Upcoming Events
+                Shows to the left on desktop, shows below homeinfo on mobile-->
+                <div class="col-md-3 order-sm-2 order-md-1 col-sm-12 col-xs-12 upcoming-events">
+                    <div>
+                        <div>
+                            <p onclick="window.location.href = 'http://www.wrsd.net/wrhs/calendar.cfm'" style="cursor: pointer" class="wachu-green upcoming-events-header">Upcoming Events</p>
+                        </div>
+                        <!--Rows for upcoming events-->
+                        <div class="upcoming-events-row">
+                            <p class="upcoming-events-date">Oct 11, 2017 7:00 PM</p>
+                            <p class="upcoming-events-name">Booster Club Meeting</p>
+                        </div>
+
+                        <!--A nice little separator-->
+                        <hr class="upcoming-events-separator" />
+                        <div class="upcoming-events-row">
+                            <p class="upcoming-events-date">Oct 11, 2017 7:35 AM</p>
+                            <p class="upcoming-events-name">PSAT Testing</p>
+                        </div>
+                        
+                        <hr class="upcoming-events-separator" />
+                        <div class="upcoming-events-row">
+                            <p class="upcoming-events-date">Oct 16, 2017 6:30 PM</p>
+                            <p class="upcoming-events-name">Sports Concussion Management Training</p>
+                        </div>
+
+                        <hr class="upcoming-events-separator" />
+                        <div class="upcoming-events-row">
+                            <p class="upcoming-events-date">Oct 18, 2017 7:00 PM</p>
+                            <p class="upcoming-events-name">Autumn Concert</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <br />
+
+        <!--Footer-->
+        <footer class="wachu-green-header">
+            <h5 class="footerText">Wachusett Regional High School</h5>
+            <h6 class="footerText">1401 Main Street | Holden MA 01520 | Phone: 508-829-6771 | Fax: 508-829-4895</h6>
+            <p class="footerText">Principal, William P. <span onclick="togglememe()">Beando</span></p>
+        </footer>
+    </div>
+</body>
+</html>
