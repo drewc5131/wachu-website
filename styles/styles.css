@@ -37,12 +37,6 @@ h1{font-size: 30px;}
     background-color: white;
 }
 .navbar {
-    position: fixed;
-    right: 0;
-    left: 0;
-    float: left;
-    width: 100%;
-    z-index: 9999;
     padding: 0px 20px 0px 20px;
 }
 
