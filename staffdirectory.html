@@ -64,7 +64,10 @@
         </div>
     </div>
     <div id="loader" class="spinner">
-        <img width="100%" src="assets/Ripple.svg" />
+        <svg viewBox="-1 -1 2 2">
+            <circle class="load1" cx="0" cy="0" r=".5" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#076d00" stroke-width=".1"></circle>
+            <circle class="load2" cx="0" cy="0" r=".5" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#a4a4a4" stroke-width=".1"></circle>
+        </svg>
     </div>
     <div id="content" class="animsition">
         <br />

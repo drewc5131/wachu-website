@@ -116,7 +116,7 @@ $(document).ready(function () {
         inClass: 'fade-in-up-sm',
         outClass: 'fade-out-down-sm',
         inDuration: 400,
-        outDuration: 250,
+        outDuration: 400,
         linkElement: 'a:not([target="_blank"]):not([href^="#"])',
         loading: false,
         loadingParentElement: 'body',
