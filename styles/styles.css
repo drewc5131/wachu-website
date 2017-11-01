@@ -240,4 +240,7 @@ footer {
 .dropdown-toggle {
     cursor: pointer;
 }
-    
+
+.bg-light {
+    background-color: white !important;
+}
