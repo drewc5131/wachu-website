@@ -154,7 +154,8 @@ hr {
     background-color: #134917;
     color: white;
 }
-.whiteStaff{
+
+.whiteStaff {
     background-color: #082a0b;
 }
 
@@ -253,6 +254,6 @@ body {
     color: white;
 }
 
-.bg-light{
+.bg-light {
     background-color: #2f2f2f !important;
 }
