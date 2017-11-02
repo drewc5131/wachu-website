@@ -299,3 +299,17 @@ footer {
 .schedule25 {
     background-color: pink;
 }
+
+.clickable-image{
+
+}
+
+    .clickable-image:hover {
+        box-shadow: 0px 6px 20px 0px #868e96;
+    }
+
+
+li a {
+    color: #134917;
+    font-weight: bold;
+}
