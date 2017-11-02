@@ -263,3 +263,7 @@ footer {
 .bg-light {
     background-color: white !important;
 }
+
+.header{
+    text-align: center;
+}

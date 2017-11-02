@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="js/main.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/animsition.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.css" />
+    <title>WRHS Home</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCol" aria-controls="navbarCol" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="assets/wachusett.png" width="50px" class="navbar-brand" />
+            <div class="collapse navbar-collapse" id="navbarCol">
+                <div class="navbar-nav">
+
+                    <a href="index.html" class="navbarbutton animsition-link">Home</a>
+                    <div class="nav-item btn-group-vertical dropdown">
+                        <a class="navbarbutton dropdown-toggle" href="#" role="dropdown" id="acedemicsDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Acedemics</a>
+                        <!--Acedemics-->
+                        <!--Dropdown menu for ACEDEMICS-->
+
+                        <div class="dropdown-menu" aria-labelledby="acedemicsDrop">
+                            <a class="dropdown-item navbarbutton animsition-link" href="mathfaculty.html">Math</a>
+                            <a class="dropdown-item navbarbutton animsition-link" href="socialstudiesfaculty.html">Social Studies</a>
+                            <a class="dropdown-item navbarbutton animsition-link" href="#">Learning Expectations, Core Values</a>
+                            <a class="dropdown-item navbarbutton animsition-link" href="artfaculty.html">Art</a>
+                            <a class="dropdown-item navbarbutton animsition-link" href="#">English</a>
+                            <a class="dropdown-item navbarbutton animsition-link" href="#">Foreign Languages</a>
+                            <a class="dropdown-item navbarbutton animsition-link" href="#">Music</a>
+                            <a class="dropdown-item navbarbutton animsition-link" href="#">Partnership Programs</a>
+                            <a class="dropdown-item navbarbutton animsition-link" href="#">Physical Education</a>
+                            <a class="dropdown-item navbarbutton animsition-link" href="#">Science</a>
+                            <a class="dropdown-item navbarbutton animsition-link" href="#">Advance Placement</a>
+                        </div>
+
+                    </div>
+                    <a href="clubs.html" class="navbarbutton animsition-link">Clubs and Activities </a>
+                    <a href="http://ps.wrsd.net/" class="navbarbutton animsition-link">PowerSchool Login</a>
+                    <a href="staffdirectory.html" class="navbarbutton animsition-link">Staff Directory</a>
+                    <a href="morelinks.html" class="navbarbutton navbarbutton-cur animsition-link">More Links</a>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="wachu-green-header">
+        <!--Header: wachu-green-header fills the background with the same green as is in the wrhsheader920.jpg
+            to make it seamless across all widths-->
+        <div class="container">
+            <img src="assets/wrhsheader920.jpg" width="100%">
+        </div>
+    </div>
+    <div id="loader" class="spinner">
+        <svg viewBox="-1 -1 2 2">
+            <circle class="load1" cx="0" cy="0" r=".5" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#076d00" stroke-width=".1"></circle>
+            <circle class="load2" cx="0" cy="0" r=".5" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#a4a4a4" stroke-width=".1"></circle>
+        </svg>
+    </div>
+    <div id="content" class="animsition">
+        <br />
+
+        <div class="container">
+
+            <div class="row">
+
+
+                <div class="col-md-12 homeinfo">
+                    <h1 class="header">Information</h1>
+
+                    <hr />
+
+                    <h1 class="header">Bell Schedules</h1>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <br />
+
+        <!--Footer-->
+        <footer class="wachu-green-header">
+            <h5 class="footerText">Wachusett Regional High School</h5>
+            <h6 class="footerText">1401 Main Street | Holden MA 01520 | Phone: 508-829-6771 | Fax: 508-829-4895</h6>
+            <p class="footerText">Principal, William P. <span onclick="togglememe()">Beando</span></p>
+        </footer>
+    </div>
+</body>
+</html>
