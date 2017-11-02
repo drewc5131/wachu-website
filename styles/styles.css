@@ -267,3 +267,24 @@ footer {
 .header{
     text-align: center;
 }
+
+/*Bell Schedules*/
+.schedule {
+    border: solid;
+    border-color: black;
+    box-shadow: 0px 0px 20px 0px #868e96;
+}
+
+.schedule td, .schedule th, .schedule tr {
+    border: solid;
+    border-color: black;
+    font-size: small
+}
+
+.scheduleDaily{
+    background-color: #b1ea9d;
+}
+
+.schedule25{
+    background-color: pink;
+}
