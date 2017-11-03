@@ -22,7 +22,32 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCol" aria-controls="navbarCol" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <img src="assets/wachusett.png" width="50px" class="navbar-brand" />
+            <a data-toggle="modal" data-target="exampleModal><img src="assets/wachusett.png" width="50px" class="navbar-brand" /></a>
+		
+
+			<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  					<div class="modal-dialog" role="document">
+    						<div class="modal-content">
+					      		<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  			<span aria-hidden="true">&times;</span>
+								</button>
+					      		</div>
+					      		<div class="modal-body">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/xHLes2dUuEQ" frameborder="0" allowfullscreen></iframe>
+					      		</div>
+					      		<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+					      		</div>
+					    	</div>
+					 </div>
+				</div>
+		
+		
+		
             <div class="collapse navbar-collapse" id="navbarCol">
                 <div class="navbar-nav">
 
@@ -133,7 +158,9 @@
                             <li><a href="#apWHistory">Sculpture</a></li>
                         </ul>
                     </div>
-
+		    
+		    <hr />
+			
                     <div>
                         <h6>Full-year Electives</h6>
                         <ul>
