@@ -313,3 +313,19 @@ li a {
     color: #134917;
     font-weight: bold;
 }
+
+.info-details{
+    transition: all .5s;
+}
+.info-details:hover{cursor:pointer}
+
+@keyframes detailsdrop {
+    from {
+        opacity: 0;
+        transform: translate(0px, 10px)
+    }
+}
+
+.info-details-content {
+    animation: dropdown .2s ease-in-out;
+}
