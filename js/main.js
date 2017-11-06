@@ -11,6 +11,9 @@ document.onreadystatechange = function () {
     }
     else {
     }
+    if (document.readyState == 'interactive') {
+        document.getElementById("loader").style.display = "block";
+        document.getElementById("content").style.display = "none";}
     if (document.readyState == 'complete') {load();}
 }
 
