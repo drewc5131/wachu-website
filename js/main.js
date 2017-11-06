@@ -1,4 +1,4 @@
-function load() {
+function doneLoading() {
     document.getElementById("loader").style.display = "none";
     document.getElementById("content").style.display = "block";
 }
@@ -12,9 +12,8 @@ document.onreadystatechange = function () {
     else {
     }
     if (document.readyState == 'interactive') {
-        document.getElementById("loader").style.display = "block";
-        document.getElementById("content").style.display = "none";}
-    if (document.readyState == 'complete') {load();}
+    }
+    if (document.readyState == 'complete') {doneLoading();}
 }
 
 var isMeme = false;
