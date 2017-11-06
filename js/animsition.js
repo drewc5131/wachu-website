@@ -158,6 +158,7 @@
 
       __.settings.timer = setTimeout(function(){
         __.in.call(_this);
+        document.getElementById("loader").style.display = "none";
 
         $(window).off('load.' + namespace);
       }, options.timeoutCountdown);
