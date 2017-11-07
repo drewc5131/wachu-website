@@ -6,18 +6,12 @@ function doneLoading() {
 
 // When the page is fully loaded, it calls the load() function, which hides the loading icon and shows the rest of the content
 document.onreadystatechange = function () {
-    if (document.cookie == "wantDark=true") {
-        setDark()
-    }
-    else {
-    }
-    if (document.readyState == 'interactive') {
-    }
     if (document.readyState == 'complete') {doneLoading();}
 }
 
 var isMeme = false;
 
+// Some memes
 function togglememe() {
     // toggles comic sans font xddd
     if (!isMeme) {
@@ -62,7 +56,7 @@ function donahue() {
     var pronoun = window.prompt("What is your prefered pronoun?", "");
     console.log(pronoun);
     if (realgenders.indexOf(pronoun) == -1) {
-        document.body.innerHTML = "<h1 style=\"text-align:center\">keep being your self! you are beautiful! dont let the right-wing nazis say your gender isnt real!</h1>"
+        document.body.innerHTML = "<h1 style=\"text-align:center\">keep being your self! you are beautiful! dont let the right-wing meanies say your gender isnt real!</h1>"
     }
     if (realgenders.indexOf(pronoun) == 1 || realgenders.indexOf(pronoun) == 3) {
         window.location.href = "https://feministfrequency.com/";
@@ -92,27 +86,9 @@ function washington() {
 	// george washington looking study hall monitor
     document.body.innerHTML = "<h1 style=\"text-align: center\">lets get going! get to class!</h1>" +
         "<img width=\"100%\" height=\"400px\" src=\"https://upload.wikimedia.org/wikipedia/commons/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg\"/>";
-        
 } 
 
-function setDark() {
-    toggleDark(true);
-    var link = document.createElement('link');
-    link.setAttribute('rel', 'stylesheet');
-    link.type = 'text/css';
-    link.href = 'styles/styles-dark.css';
-    document.head.appendChild(link);
-}
-
-function setLight() {
-    toggleDark(false);
-    window.location.reload();
-}
-
-function toggleDark(wantDark) {
-    document.cookie = "wantDark=" + wantDark;
-}
-
+// This calls the page transitions
 $(document).ready(function () {
     $(".animsition").animsition({
         inClass: 'fade-in-up-sm',
@@ -125,7 +101,7 @@ $(document).ready(function () {
         loadingClass: 'animsition-loading',
         loadingInner: '',
         timeout: true,
-        timeoutCountdown: 1000,
+        timeoutCountdown: 10,
         onLoadEvent: true,
         browser: ['animation-duration', '-webkit-animation-duration'],
         overlay: false,

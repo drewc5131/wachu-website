@@ -1,4 +1,5 @@
 ﻿:root {
+    /*Defined variable for a commonly used color*/
     --wachusettGreen: #1B5E20;
 }
 
@@ -10,12 +11,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-@keyframes begin {
-    from {
-        opacity: 0;
-    }
-}
-
+/*Animation for dropdown menu*/
 @keyframes dropdown {
     from {
         transform: translate(0px, -10px);
@@ -35,16 +31,17 @@ h1 {
     font-size: 30px;
 }
 
+/*Dropdown Menu*/
 .dropdown-menu {
     animation: dropdown .2s ease-in-out;
     background-color: var(--wachusettGreen);
     border: solid;
     border-radius: 0px;
-    border-color: var(--wachusettGreen);
+    border-color: white;
     padding: 0px;
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
     background-color: transparent !important;
 }
 
@@ -56,11 +53,6 @@ h1 {
     padding: 0px 20px 0px 20px;
 }
 
-.navbaritem {
-}
-
-.navbar.scrolled {
-}
 
 .navbarbutton {
     color: white;
@@ -173,8 +165,9 @@ hr {
 footer {
     box-shadow: 0px 0px 20px 0px #868e96;
 }
-/*Loading thing*/
 
+
+/*Loading thing*/
 .spinner {
     margin: 100px auto;
     width: 50px;
@@ -189,69 +182,18 @@ footer {
     transform: scale(2);
 }
 
-
-
-    .spinner > div {
-        background-color: #333;
-        height: 100%;
-        width: 6px;
-        display: inline-block;
-        -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
-        animation: sk-stretchdelay 1.2s infinite ease-in-out;
-    }
-
-
-
-    .spinner .rect2 {
-        -webkit-animation-delay: -1.1s;
-        animation-delay: -1.1s;
-        animation: sk-stretchdelay 1.2s infinite ease-in-out;
-    }
-
 .load1 {
+    /*Loading Circle Green Part*/
     animation: sk-stretchdelay 1.2s infinite ease-in-out;
 }
 
 .load2 {
+    /*Loading Circle White Part*/
     animation: sk-stretchdelay 1.2s infinite ease-in-out;
     animation-delay: -.5s;
 }
 
-.spinner .rect3 {
-    -webkit-animation-delay: -1.0s;
-    animation-delay: -1.0s;
-}
-
-
-
-.spinner .rect4 {
-    -webkit-animation-delay: -0.9s;
-    animation-delay: -0.9s;
-}
-
-
-
-.spinner .rect5 {
-    -webkit-animation-delay: -0.8s;
-    animation-delay: -0.8s;
-}
-
-
-@-webkit-keyframes sk-stretchdelay {
-
-    0%, 40%, 100% {
-        -webkit-transform: scaleY(0.4)
-    }
-
-
-
-    20% {
-        -webkit-transform: scaleY(1.0)
-    }
-}
-
-
-
+/*The animation for it*/
 @keyframes sk-stretchdelay {
 
     0% {
@@ -277,7 +219,7 @@ footer {
 }
 
 .bg-light {
-    background-color: var(--wachusettGreen) !important; 
+    background-color: var(--wachusettGreen) !important;
 }
 
 .header {
@@ -305,24 +247,18 @@ footer {
     background-color: pink;
 }
 
-.clickable-image{
-
-}
-
-    .clickable-image:hover {
- 
-    }
-
-
 li a {
     color: #134917;
     font-weight: bold;
 }
 
-.info-details{
+.info-details {
     transition: all .5s;
 }
-.info-details:hover{cursor:pointer}
+
+    .info-details:hover {
+        cursor: pointer
+    }
 
 @keyframes detailsdrop {
     from {
@@ -335,6 +271,8 @@ li a {
     animation: dropdown .2s ease-in-out;
 }
 
-.navbar-brand{
-    
+.navbar-toggler {
+    border-radius: 50px !important;
+    background: white !important;
+    padding: 5px !important;
 }
