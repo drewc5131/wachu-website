@@ -42,11 +42,9 @@ h1 {
 }
 
 .dropdown-item:hover {
-    background-color: transparent !important;
 }
 
 .dropdown-item:active {
-    background-color: white;
 }
 
 .navbar {
@@ -60,34 +58,33 @@ h1 {
     padding: 10px;
     font-family: 'Roboto', sans-serif;
     transition: all .2s ease-out;
+    background-color: var(--wachusettGreen);
+    margin: 0px;
 }
 
     .navbarbutton:hover {
         font-family: "Segoe UI";
-        box-shadow: 0px -2px white inset;
-        color: white;
+        box-shadow: 0px 0px 0px 2px black inset;
+        color: black;
         text-decoration: none;
         font-family: 'Roboto', sans-serif;
+        background-color: white;
     }
 
 .navbarbutton-cur {
     font-family: "Segoe UI";
-    color: white;
-    box-shadow: 0px -3px white inset;
+    color: black;
+    box-shadow: 0px 0px 0px 3px black inset;
+    background-color: white;
     font-family: 'Roboto', sans-serif;
-    animation: navbarCurSelect .5s ease-in-out;
 }
-/*The black bar under the selected page pop up*/
-@keyframes navbarCurSelect {
-    from {
-        box-shadow: 0px 0px #000066 inset;
-    }
-}
+
 
 .navbarbutton:active {
     font-family: "Segoe UI";
     color: black;
-    box-shadow: 0px -50px white inset;
+    box-shadow: 0px 0px 0px 3px black inset;
+    background-color: white;
     font-family: 'Roboto', sans-serif;
 }
 
