@@ -159,7 +159,7 @@
     -ms-transform-origin: 0 100%;
     -webkit-transform-origin: 0 100%;
     unicode-bidi: bidi-override;
-    -moz-font-feature-settings: "liga" 0
+    -moz-font-feature-settings: "liga" 0;
 }
 
     .t:after {
