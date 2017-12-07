@@ -405,3 +405,11 @@ li a {
     margin: 0px 4px 0px 4px;
     box-shadow: 7px 7px 1px rgba(10,10,10,0.25);
 }
+
+.clickable-image {
+    background-color: white;
+    border: solid var(--wachusettGreen) 5px;
+    padding: 10px;
+    margin: 4px;
+    box-shadow: 7px 7px 1px rgba(10,10,10,0.25);
+}

@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles/styles.css" />
@@ -22,7 +22,7 @@
 <body>
 
     <header>
-        <div class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCol" aria-controls="navbarCol" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -61,111 +61,113 @@
             </div>
         </div>
     </header>
-    <div class="wachu-green-header">
-        <!--Header: wachu-green-header fills the background with the same green as is in the wrhsheader920.jpg
+    <div class="pgcontent">
+        <div class="wachu-green-header">
+            <!--Header: wachu-green-header fills the background with the same green as is in the wrhsheader920.jpg
             to make it seamless across all widths-->
-        <div class="container">
-            <img src="assets/wrhsheader920.jpg" width="100%">
-        </div>
-    </div>
-    <div id="loader" class="spinner">
-        <svg viewBox="-1 -1 2 2">
-            <circle class="load1" cx="0" cy="0" r=".5" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#076d00" stroke-width=".1"></circle>
-            <circle class="load2" cx="0" cy="0" r=".5" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#a4a4a4" stroke-width=".1"></circle>
-        </svg>
-    </div>
-    <div id="content" class="animsition">
-
-        <br />
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-md-12 order-sm-1 order-md-2 homeinfo">
-                    <h1 class="header">WRHS Mathematics</h1>
-                </div>
+            <div class="container">
+                <img src="assets/wrhsheader920.jpg" width="100%">
             </div>
+        </div>
+        <div id="loader" class="spinner">
+            <svg viewBox="-1 -1 2 2">
+                <circle class="load1" cx="0" cy="0" r=".5" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#076d00" stroke-width=".1"></circle>
+                <circle class="load2" cx="0" cy="0" r=".5" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#a4a4a4" stroke-width=".1"></circle>
+            </svg>
+        </div>
+        <div id="content" class="animsition">
+
             <br />
-            <div class="row">
-                <div class="col-md-6 col-sm-12 upcoming-events" id="socialStudiesClasses">
-                    <h5 class="header">Math Classes</h5>
-                    <!--All classes (not complete)-->
-                    <div>
-                        <h6>Lower School</h6>
-                        <ul>
-                            <li>
-                                <a href="#algebra1">Algebra 1</a>
-                            </li>
-                            <li>
-                                <a href="#fundamentalsAlgebra1">Fundamentals of Algebra 1</a>
-                            </li>
-                            <li>
-                                <a href="#geometry">Geometry</a>
-                            </li>
-                            <li>
-                                <a href="#fundamentalsGeometry">Fundamentals of Geometry</a>
-                            </li>
-                            <li>
-                                <a href="#algebra2">Algebra 2</a>
-                            </li>
-                        </ul>
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12 order-sm-1 order-md-2 homeinfo">
+                        <h1 class="header">WRHS Mathematics</h1>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 upcoming-events" id="socialStudiesClasses">
+                        <h5 class="header">Math Classes</h5>
+                        <!--All classes (not complete)-->
+                        <div>
+                            <h6>Lower School</h6>
+                            <ul>
+                                <li>
+                                    <a href="#algebra1">Algebra 1</a>
+                                </li>
+                                <li>
+                                    <a href="#fundamentalsAlgebra1">Fundamentals of Algebra 1</a>
+                                </li>
+                                <li>
+                                    <a href="#geometry">Geometry</a>
+                                </li>
+                                <li>
+                                    <a href="#fundamentalsGeometry">Fundamentals of Geometry</a>
+                                </li>
+                                <li>
+                                    <a href="#algebra2">Algebra 2</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <hr />
+
+                        <div>
+                            <h6>Upper School</h6>
+                            <ul>
+                                <li><a href="#algebra2">Algebra 2</a></li>
+                            </ul>
+                        </div>
+
+
+
                     </div>
 
-                    <hr />
-
-                    <div>
-                        <h6>Upper School</h6>
+                    <div class="col-md-6 col-sm-12 upcoming-events" id="socialStudiesFaculty">
+                        <h5 class="header">Math Facility</h5>
                         <ul>
-                            <li><a href="#algebra2">Algebra 2</a></li>
+                            <!--Teacher Sites-->
+                            <li><a class="link" href="https://sites.google.com/a/wrsd.net/bailey/">Melissa Bailey</a></li>
+                            <li><a class="link" href="https://sites.google.com/a/wrsd.net/mrs-beccia-s-website/">Ellen Beccia</a></li>
+                            <li><a class="link" href="https://sites.google.com/a/wrsd.net/berman/">Zachary Berman</a></li>
+                            <li><a class="link" href="https://sites.google.com/a/wrsd.net/chevrette/">Shawn Chevrette</a></li>
+                            <li><a class="link" href="https://sites.google.com/a/wrsd.net/jennifercollard/">Jennifer Collard</a></li>
+                            <li><a class="link">Samantha Cornwell</a></li>
+                            <li><a class="link">Jessica Dauost</a></li>
+                            <li><a class="link">Kaitlyn Foucher</a></li>
+                            <li><a class="link">Maura Goddard</a></li>
+                            <li><a class="link" href="https://sites.google.com/a/wrsd.net/keene/">Sarah Keene</a></li>
+                            <li><a class="link" href="https://sites.google.com/a/wrsd.net/mr-kodys-classroom/home">Jeffrey Kodys</a></li>
+                            <li><a class="link">Matt Lane</a></li>
+                            <li><a class="link">Nate Lenhart</a></li>
+                            <li><a class="link" href="https://sites.google.com/a/wrsd.net/ms-mitchellwrhs/">Kathleen Mitchell</a></li>
+                            <li><a class="link" href="https://sites.google.com/wrsd.net/kpearson/">Katie Pearson</a></li>
+                            <li><a class="link" href="https://sites.google.com/wrsd.net/mrsross/">Myla Ross</a></li>
+                            <li><a class="link">Lynn Swidey</a> <small><a class="link" href="http://www.wrsd.net/wrhs/documents/Academics/SwideyAlg1CPsyll2016.pdf">Algebra 1</a> <a class="link" href="http://www.wrsd.net/wrhs/documents/Academics/SwideyGeoHsyll2016%20.pdf">Geometry</a> <a class="link" href="http://www.wrsd.net/wrhs/documents/Academics/SwideyPreCalcsyll2016.pdf">Pre-Calculus</a></small></li>
+
                         </ul>
+
                     </div>
-
-
 
                 </div>
 
-                <div class="col-md-6 col-sm-12 upcoming-events" id="socialStudiesFaculty">
-                    <h5 class="header">Math Facility</h5>
-                    <ul>
-                        <!--Teacher Sites-->
-                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/bailey/">Melissa Bailey</a></li>
-                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/mrs-beccia-s-website/">Ellen Beccia</a></li>
-                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/berman/">Zachary Berman</a></li>
-                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/chevrette/">Shawn Chevrette</a></li>
-                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/jennifercollard/">Jennifer Collard</a></li>
-                        <li><a class="link">Samantha Cornwell</a></li>
-                        <li><a class="link">Jessica Dauost</a></li>
-                        <li><a class="link">Kaitlyn Foucher</a></li>
-                        <li><a class="link">Maura Goddard</a></li>
-                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/keene/">Sarah Keene</a></li>
-                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/mr-kodys-classroom/home">Jeffrey Kodys</a></li>
-                        <li><a class="link">Matt Lane</a></li>
-                        <li><a class="link">Nate Lenhart</a></li>
-                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/ms-mitchellwrhs/">Kathleen Mitchell</a></li>
-                        <li><a class="link" href="https://sites.google.com/wrsd.net/kpearson/">Katie Pearson</a></li>
-                        <li><a class="link" href="https://sites.google.com/wrsd.net/mrsross/">Myla Ross</a></li>
-                        <li><a class="link">Lynn Swidey</a> <small><a class="link" href="http://www.wrsd.net/wrhs/documents/Academics/SwideyAlg1CPsyll2016.pdf">Algebra 1</a> <a class="link" href="http://www.wrsd.net/wrhs/documents/Academics/SwideyGeoHsyll2016%20.pdf">Geometry</a> <a class="link" href="http://www.wrsd.net/wrhs/documents/Academics/SwideyPreCalcsyll2016.pdf">Pre-Calculus</a></small></li>
-
-                    </ul>
+                <div class="row">
+                    <div class="col-md-12 homeinfo">
+                    </div>
 
                 </div>
 
             </div>
 
-            <div class="row">
-                <div class="col-md-12 homeinfo">
-                </div>
-
-            </div>
-
+            <br />
+            <footer class="wachu-green-header">
+                <h5 class="footerText">Wachusett Regional High School</h5>
+                <h6 class="footerText">1401 Main Street | Holden MA 01520 | Phone: 508-829-6771 | Fax: 508-829-4895</h6>
+                <p class="footerText">Principal, William P. <span onclick="togglememe()">Beando</span></p>
+            </footer>
         </div>
-
-        <br />
-        <footer class="wachu-green-header">
-            <h5 class="footerText">Wachusett Regional High School</h5>
-            <h6 class="footerText">1401 Main Street | Holden MA 01520 | Phone: 508-829-6771 | Fax: 508-829-4895</h6>
-            <p class="footerText">Principal, William P. <span onclick="togglememe()">Beando</span></p>
-        </footer>
     </div>
 </body>
 </html>

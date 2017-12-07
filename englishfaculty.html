@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles/styles.css" />
@@ -22,7 +22,7 @@
 <body>
 
     <header>
-        <div class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCol" aria-controls="navbarCol" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -61,165 +61,166 @@
             </div>
         </div>
     </header>
-    <div class="wachu-green-header">
-        <!--Header: wachu-green-header fills the background with the same green as is in the wrhsheader920.jpg
+    <div class="pgcontent">
+        <div class="wachu-green-header">
+            <!--Header: wachu-green-header fills the background with the same green as is in the wrhsheader920.jpg
             to make it seamless across all widths-->
-        <div class="container">
-            <img src="assets/wrhsheader920.jpg" width="100%">
+            <div class="container">
+                <img src="assets/wrhsheader920.jpg" width="100%">
+            </div>
+        </div>
+        <div id="loader" class="spinner">
+            <svg viewBox="-1 -1 2 2">
+                <circle class="load1" cx="0" cy="0" r=".5" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#076d00" stroke-width=".1"></circle>
+                <circle class="load2" cx="0" cy="0" r=".5" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#a4a4a4" stroke-width=".1"></circle>
+            </svg>
+        </div>
+        <div id="content" class="animsition">
+
+            <br />
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12 order-sm-1 order-md-2 homeinfo">
+                        <h1 class="header">Social Studies Requirements and Sequences</h1>
+                        <p>The WRHS English Department fosters in all students the ability to think critically by giving students a solid grounding in reading and writing, and speaking and listening. After taking the core courses of English 9 and English 10, Wachusett students choose from a variety of English electives during their junior and senior years. A key component of all English courses, in both the lower and upper schools, is the literary analysis, or critique. The critique is one component of the Wachusett Writing Standard that all students must complete to achieve a determination of competency in writing.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 upcoming-events" id="socialStudiesClasses">
+                        <h5 class="header">Social Studies Classes</h5>
+
+                        <div>
+                            <!--All classes-->
+                            <h6>Lower School Requirements</h6>
+                            <ul>
+                                <li>
+                                    <a href="#worldHistory2">World History II</a>
+                                </li>
+                                <li>
+                                    <a href="#usHistoryI">U.S. History I</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <hr />
+
+                        <div>
+                            <h6>Upper School Requirement</h6>
+                            <ul>
+                                <li><a href="#usHistory2">U.S. History II</a><p><small>(AP U.S. History may be taken in lieu of U.S. History II)</small></p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h6>Full-Year Electives</h6>
+                            <ul>
+                                <li><a href="#apEconomics">Advanced Placement Economics</a></li>
+                                <li><a href="#apEUHistory">Advanced Placement European History</a></li>
+                                <li><a href="#apPsychology">Advanced Placement Psychology</a></li>
+                                <li><a href="#apGov">Advanced Placement Government and Politics</a></li>
+                                <li><a href="#apUSHistory">Advanced Placement US History</a></li>
+                                <li><a href="#apWHistory">Advanced Placement World History</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h6>One-Semester Electives</h6>
+                            <h6 style="font-size: 14px">First Semester</h6>
+                            <ul>
+                                <li><a href="#civics">Civics in the 21st Century</a></li>
+                                <li><a href="#ssSeminar-Contemp">S.S. Seminar: Contemporary Problems</a></li>
+                                <li><a href="#ssSeminar-Ethics">S.S. Seminar: Ethics: Human Conduct and Values</a></li>
+                                <li><a href="#psychI">Psychology I: Study of Human Behavior</a></li>
+                                <li><a href="#usGov">U.S. Government and Politics</a></li>
+                            </ul>
+                            <h6 style="font-size: 14px">Second Semester</h6>
+                            <ul>
+                                <li><a href="#civics">Civics in the 21st Century</a></li>
+                                <li><a href="#contempAmerican">Contemporary American Culture</a></li>
+                                <li><a href="#ssSeminar-Contemp">S.S. Seminar: Contemporary Problems</a></li>
+                                <li><a href="#ssSeminar-Ethics">S.S. Seminar: Ethics: Human Conduct and Values</a></li>
+                                <li><a href="#psychII">Psychology II: Study of Exeptional Persons</a></li>
+                                <li><a href="#sociology">Sociology</a></li>
+                                <li><a href="#humanBehavior">Human Behavior</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 upcoming-events" id="socialStudiesFaculty">
+                        <h5 class="header">Social Studies Facility</h5>
+                        <!--Teacher pages (not complete)-->
+                        <ul>
+                            <!--Teacher Sites-->
+                            <li><a class="link">Linda Buraczenski</a></li>
+                            <li><a class="link" href="https://sites.google.com/a/wrsd.net/donahue-english/">AnneMarie Donahue</a></li>
+                            <li><a class="link">Sean Farrell</a></li>
+                            <li><a class="link">Karl Hartshorn</a></li>
+                            <li><a class="link">Laura Hazel</a></li>
+                            <li><a class="link">Christine Hicks</a></li>
+                            <li><a class="link" href="https://sites.google.com/a/wrsd.net/mrs-jarrett-s-website/">Emily Jarrett (xd)</a></li>
+                            <li><a class="link" href="https://sites.google.com/a/wrsd.net/lefebvre/">Sarah Lefebvre</a></li>
+                            <li><a class="link" href="https://sites.google.com/a/wrsd.net/ms-leschke-links/home">Lynn Leschke</a></li>
+                            <li><a class="link" href="https://sites.google.com/a/wrsd.net/luxenglish/home">Brian Lux</a></li>
+                            <li><a class="link" href="https://sites.google.com/a/wrsd.net/marshall/">Whitney Marshall</a></li>
+                            <li><a class="link" href="https://sites.google.com/a/wrsd.net/mrs-martin-english/">Emma Martin</a></li>
+                            <li><a class="link">Ned McTigue</a></li>
+                            <li><a class="link">Lynne Morrow</a></li>
+                            <li><a class="link">Jennifer Natusch</a></li>
+                            <li><a class="link" href="https://sites.google.com/a/wrsd.net/nicastro/home">Cathy Nicastro</a></li>
+                            <li><a class="link">Sasha Possemato</a></li>
+                            <li><a class="link" href="http://teacherweb.com/MA/WachusettRegionalHighSchool/Swan">Emily Rejniak</a></li>
+                            <li><a class="link" href="https://sites.google.com/a/wrsd.net/sasso-s-world/">Linda Sasso</a></li>
+                            <li><a class="link" href="https://sites.google.com/a/wrsd.net/mr-tarmey-s-classes/">Chris Tarmey</a></li>
+                            <li><a class="link" href="https://sites.google.com/a/wrsd.net/mrs-zingarella-s-english-site/">Melissa Zingarella</a></li>
+
+
+
+                        </ul>
+
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 homeinfo">
+                        <h1 class="header">Social Studies Description of Levels</h1>
+                        <p><strong>Honors: </strong>Students at the Honors level will be expected to read scholarly documents and texts for understanding, inference, and context.  They will analyze and synthesize information to reach conclusions and formulate and defend positions on a variety of topics. They will perform extensive independent work and will be expected to read and write at a consistently high level. They will write papers and essays that incorporate independent research and will complete other research projects. They will be expected to complete regular homework assignments as reinforcement and enrichment of classroom lessons. Students at the honors level receive an accelerated curriculum that will allow them to make an immediate transition to advanced college work.</p>
+                        <p><strong>College Prep - Accelerated (CPA): </strong>Students at the CPA level will be expected to read primary sources and scholarly material. They will write with coherence and organization as they create papers and essays that incorporate independent research. They will complete other research projects that involve independent work. They will be expected to complete regular homework assignments as reinforcement and enrichment of classroom lessons. Students at the CPA level will receive a solid foundation of knowledge that will allow them to make a seamless transition to a college or university.</p>
+                        <p><strong>College Prep (CP): </strong></p>
+
+                        <h1 class="header">Lower School Program</h1>
+                        <h2 id="worldHistory2" class="header">World History</h2>
+                        <p><strong class="link">World History II (H, CPA, CP; Grade 9) 5 Credits (Full year): </strong>This course follows World History I, which students take in the eighth grade. In World History II, students study the rise of the nation state in Europe, revolutions in the Atlantic world, and the economic and political roots of the modern world. They study the origins and consequences of the Industrial Revolution, 19th-century political reform in Western Europe, and imperialism in Africa, Asia, and South America. They will examine the causes and consequences of the great military and economic events of the past century, including World War I, the rise of totalitarianism, World War II, the Cold War, and the Russian and Chinese revolutions. Finally, students will study the rise of nationalism and the continuing persistence of political, ethnic, and religious conflict in many parts of the world.</p>
+
+                        <h1 class="header">Lower School / Upper School Options</h1>
+                        <p><strong>World History II (Grades 9-12) 5 credits: </strong>This course spans the time periods from 1815 to the present and covers World Revolutions, Imperialism, World Wars, Cold War, independence movements and the world today. Emphasis will be on how world events affect our country. Class activities will include map-making, research projects and timelines.</p>
+                        <p><strong>Social Studies (CP, Grades 9-12) 5 credits: </strong>This class is a comprehensive sociological approach to the historical, cultural and political components of the United States and its interactions with the world; past, present, and future. This course incorporates various topics of United States and World History. The emphasis will be on World History for students in grade 9 and on United States History for students in grades 10 -12. Presentation of materials will include group discussions, hands on activities, and oral/visual presentations in order to meet the diverse learning styles of the students.</p>
+
+                        <h1 id="usHistoryI" class="header">United States History</h1>
+                        <p><strong>United States History I (H, CPA, CP; Grade 10) 5 credits (Full year): </strong>This course surveys major developments in American history from the Revolutionary era to the end of the 19th Century. Students will examine the historical and intellectual origins of the United States during the Revolutionary and Constitutional eras. They will study the framework of American democracy and the basic concepts of American government, such as popular sovereignty, federalism, establishment of political parties, and economic and social change. Finally, students will learn about the growth of sectional conflict leading to the Civil War, and the consequences of the Civil War through the Gilded Age. Students will read primary source documents, perform authentic research, and complete research papers and other assignments.</p>
+                        <p><strong>United States History I (Grade 10) 5 credits: </strong>This course will cover the major developments in the country’s history from the first Americans and the Age of Exploration through Reconstruction. Students will study the historical significance of events in this time period as well as the basic concepts of American government and democracy. Emphasis will be on our government and how it affects our lives. Varied activities will include map making, projects, time lines, field trips and individual reports.</p>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <br />
+            <footer class="wachu-green-header">
+                <h5 class="footerText">Wachusett Regional High School</h5>
+                <h6 class="footerText">1401 Main Street | Holden MA 01520 | Phone: 508-829-6771 | Fax: 508-829-4895</h6>
+                <p class="footerText">Principal, William P. <span onclick="togglememe()">Beando</span></p>
+            </footer>
         </div>
     </div>
-    <div id="loader" class="spinner">
-        <svg viewBox="-1 -1 2 2">
-            <circle class="load1" cx="0" cy="0" r=".5" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#076d00" stroke-width=".1"></circle>
-            <circle class="load2" cx="0" cy="0" r=".5" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#a4a4a4" stroke-width=".1"></circle>
-        </svg>
-    </div>
-    <div id="content" class="animsition">
-
-        <br />
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-md-12 order-sm-1 order-md-2 homeinfo">
-                    <h1 class="header">Social Studies Requirements and Sequences</h1>
-                    <p>The WRHS English Department fosters in all students the ability to think critically by giving students a solid grounding in reading and writing, and speaking and listening. After taking the core courses of English 9 and English 10, Wachusett students choose from a variety of English electives during their junior and senior years. A key component of all English courses, in both the lower and upper schools, is the literary analysis, or critique. The critique is one component of the Wachusett Writing Standard that all students must complete to achieve a determination of competency in writing.</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6 col-sm-12 upcoming-events" id="socialStudiesClasses">
-                    <h5 class="header">Social Studies Classes</h5>
-
-                    <div>
-                        <!--All classes-->
-                        <h6>Lower School Requirements</h6>
-                        <ul>
-                            <li>
-                                <a href="#worldHistory2">World History II</a>
-                            </li>
-                            <li>
-                                <a href="#usHistoryI">U.S. History I</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <hr />
-
-                    <div>
-                        <h6>Upper School Requirement</h6>
-                        <ul>
-                            <li><a href="#usHistory2">U.S. History II</a><p><small>(AP U.S. History may be taken in lieu of U.S. History II)</small></p>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h6>Full-Year Electives</h6>
-                        <ul>
-                            <li><a href="#apEconomics">Advanced Placement Economics</a></li>
-                            <li><a href="#apEUHistory">Advanced Placement European History</a></li>
-                            <li><a href="#apPsychology">Advanced Placement Psychology</a></li>
-                            <li><a href="#apGov">Advanced Placement Government and Politics</a></li>
-                            <li><a href="#apUSHistory">Advanced Placement US History</a></li>
-                            <li><a href="#apWHistory">Advanced Placement World History</a></li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h6>One-Semester Electives</h6>
-                        <h6 style="font-size: 14px">First Semester</h6>
-                        <ul>
-                            <li><a href="#civics">Civics in the 21st Century</a></li>
-                            <li><a href="#ssSeminar-Contemp">S.S. Seminar: Contemporary Problems</a></li>
-                            <li><a href="#ssSeminar-Ethics">S.S. Seminar: Ethics: Human Conduct and Values</a></li>
-                            <li><a href="#psychI">Psychology I: Study of Human Behavior</a></li>
-                            <li><a href="#usGov">U.S. Government and Politics</a></li>
-                        </ul>
-                        <h6 style="font-size: 14px">Second Semester</h6>
-                        <ul>
-                            <li><a href="#civics">Civics in the 21st Century</a></li>
-                            <li><a href="#contempAmerican">Contemporary American Culture</a></li>
-                            <li><a href="#ssSeminar-Contemp">S.S. Seminar: Contemporary Problems</a></li>
-                            <li><a href="#ssSeminar-Ethics">S.S. Seminar: Ethics: Human Conduct and Values</a></li>
-                            <li><a href="#psychII">Psychology II: Study of Exeptional Persons</a></li>
-                            <li><a href="#sociology">Sociology</a></li>
-                            <li><a href="#humanBehavior">Human Behavior</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-
-                <div class="col-md-6 col-sm-12 upcoming-events" id="socialStudiesFaculty">
-                    <h5 class="header">Social Studies Facility</h5>
-                    <!--Teacher pages (not complete)-->
-                    <ul>
-                        <!--Teacher Sites-->
-                        <li><a class="link">Linda Buraczenski</a></li>
-                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/donahue-english/">AnneMarie Donahue</a></li>
-                        <li><a class="link">Sean Farrell</a></li>
-                        <li><a class="link">Karl Hartshorn</a></li>
-                        <li><a class="link">Laura Hazel</a></li>
-                        <li><a class="link">Christine Hicks</a></li>
-                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/mrs-jarrett-s-website/">Emily Jarrett (xd)</a></li>
-                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/lefebvre/">Sarah Lefebvre</a></li>
-                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/ms-leschke-links/home">Lynn Leschke</a></li>
-                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/luxenglish/home">Brian Lux</a></li>
-                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/marshall/">Whitney Marshall</a></li>
-                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/mrs-martin-english/">Emma Martin</a></li>
-                        <li><a class="link">Ned McTigue</a></li>
-                        <li><a class="link">Lynne Morrow</a></li>
-                        <li><a class="link">Jennifer Natusch</a></li>
-                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/nicastro/home">Cathy Nicastro</a></li>
-                        <li><a class="link">Sasha Possemato</a></li>
-                        <li><a class="link" href="http://teacherweb.com/MA/WachusettRegionalHighSchool/Swan">Emily Rejniak</a></li>
-                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/sasso-s-world/">Linda Sasso</a></li>
-                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/mr-tarmey-s-classes/">Chris Tarmey</a></li>
-                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/mrs-zingarella-s-english-site/">Melissa Zingarella</a></li>
-
-
-
-                    </ul>
-
-
-                </div>
-
-            </div>
-
-            <div class="row">
-                <div class="col-md-12 homeinfo">
-                    <h1 class="header">Social Studies Description of Levels</h1>
-                    <p><strong>Honors: </strong>Students at the Honors level will be expected to read scholarly documents and texts for understanding, inference, and context.  They will analyze and synthesize information to reach conclusions and formulate and defend positions on a variety of topics. They will perform extensive independent work and will be expected to read and write at a consistently high level. They will write papers and essays that incorporate independent research and will complete other research projects. They will be expected to complete regular homework assignments as reinforcement and enrichment of classroom lessons. Students at the honors level receive an accelerated curriculum that will allow them to make an immediate transition to advanced college work.</p>
-                    <p><strong>College Prep - Accelerated (CPA): </strong>Students at the CPA level will be expected to read primary sources and scholarly material. They will write with coherence and organization as they create papers and essays that incorporate independent research. They will complete other research projects that involve independent work. They will be expected to complete regular homework assignments as reinforcement and enrichment of classroom lessons. Students at the CPA level will receive a solid foundation of knowledge that will allow them to make a seamless transition to a college or university.</p>
-                    <p><strong>College Prep (CP): </strong></p>
-
-                    <h1 class="header">Lower School Program</h1>
-                    <h2 id="worldHistory2" class="header">World History</h2>
-                    <p><strong class="link">World History II (H, CPA, CP; Grade 9) 5 Credits (Full year): </strong>This course follows World History I, which students take in the eighth grade. In World History II, students study the rise of the nation state in Europe, revolutions in the Atlantic world, and the economic and political roots of the modern world. They study the origins and consequences of the Industrial Revolution, 19th-century political reform in Western Europe, and imperialism in Africa, Asia, and South America. They will examine the causes and consequences of the great military and economic events of the past century, including World War I, the rise of totalitarianism, World War II, the Cold War, and the Russian and Chinese revolutions. Finally, students will study the rise of nationalism and the continuing persistence of political, ethnic, and religious conflict in many parts of the world.</p>
-
-                    <h1 class="header">Lower School / Upper School Options</h1>
-                    <p><strong>World History II (Grades 9-12) 5 credits: </strong>This course spans the time periods from 1815 to the present and covers World Revolutions, Imperialism, World Wars, Cold War, independence movements and the world today. Emphasis will be on how world events affect our country. Class activities will include map-making, research projects and timelines.</p>
-                    <p><strong>Social Studies (CP, Grades 9-12) 5 credits: </strong>This class is a comprehensive sociological approach to the historical, cultural and political components of the United States and its interactions with the world; past, present, and future. This course incorporates various topics of United States and World History. The emphasis will be on World History for students in grade 9 and on United States History for students in grades 10 -12. Presentation of materials will include group discussions, hands on activities, and oral/visual presentations in order to meet the diverse learning styles of the students.</p>
-
-                    <h1 id="usHistoryI" class="header">United States History</h1>
-                    <p><strong>United States History I (H, CPA, CP; Grade 10) 5 credits (Full year): </strong>This course surveys major developments in American history from the Revolutionary era to the end of the 19th Century. Students will examine the historical and intellectual origins of the United States during the Revolutionary and Constitutional eras. They will study the framework of American democracy and the basic concepts of American government, such as popular sovereignty, federalism, establishment of political parties, and economic and social change. Finally, students will learn about the growth of sectional conflict leading to the Civil War, and the consequences of the Civil War through the Gilded Age. Students will read primary source documents, perform authentic research, and complete research papers and other assignments.</p>
-                    <p><strong>United States History I (Grade 10) 5 credits: </strong>This course will cover the major developments in the country’s history from the first Americans and the Age of Exploration through Reconstruction. Students will study the historical significance of events in this time period as well as the basic concepts of American government and democracy. Emphasis will be on our government and how it affects our lives. Varied activities will include map making, projects, time lines, field trips and individual reports.</p>
-
-
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <br />
-        <footer class="wachu-green-header">
-            <h5 class="footerText">Wachusett Regional High School</h5>
-            <h6 class="footerText">1401 Main Street | Holden MA 01520 | Phone: 508-829-6771 | Fax: 508-829-4895</h6>
-            <p class="footerText">Principal, William P. <span onclick="togglememe()">Beando</span></p>
-        </footer>
-    </div>
-
 </body>
 </html>

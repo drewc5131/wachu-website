@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles/styles.css" />
@@ -21,7 +21,7 @@
 <body>
 
     <header>
-        <div class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCol" aria-controls="navbarCol" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -84,185 +84,185 @@
             </div>
         </div>
     </div>
-
-    <div class="wachu-green-header">
-        <!--Header: wachu-green-header fills the background with the same green as is in the wrhsheader920.jpg
+    <div class="pgcontent">
+        <div class="wachu-green-header">
+            <!--Header: wachu-green-header fills the background with the same green as is in the wrhsheader920.jpg
             to make it seamless across all widths-->
-        <div class="container">
-            <img src="assets/wrhsheader920.jpg" width="100%">
+            <div class="container">
+                <img src="assets/wrhsheader920.jpg" width="100%">
+            </div>
+        </div>
+        <div id="loader" class="spinner">
+            <svg viewBox="-1 -1 2 2">
+                <circle class="load1" cx="0" cy="0" r=".5" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#076d00" stroke-width=".1"></circle>
+                <circle class="load2" cx="0" cy="0" r=".5" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#a4a4a4" stroke-width=".1"></circle>
+            </svg>
+        </div>
+        <div id="content" class="animsition">
+
+            <br />
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12 order-sm-1 order-md-2 homeinfo">
+                        <h1 class="header">WRHS Art Department</h1>
+                        <h5 class="header">Registration now open for the 2017 WRHS Summer Art Academy</h5>
+                        <h5 class="header">Click <a href="http://www.wrsd.net/wrhs/documents/Academics/Art/wachusett_art_academy_flyer.pdf">here for the Summer Art Academy flier</a> and to see all program class descriptions.</h5>
+                        <h5 class="header">Click on the graphic below to register online for classes.</h5>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12" style="text-align: center">
+                            <a class="waves-effect waves-green" href="https://docs.google.com/forms/d/e/1FAIpQLSfGv4IwkSNoQFssDRlgeoXve-EHkzDn-FNKTaUF6F89zq-RiQ/viewform">
+                                <img class="img-fluid clickable-image" src="assets/wsaa_logo.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 upcoming-events" id="socialStudiesClasses">
+                        <h5 class="header">Art Classes</h5>
+
+                        <div>
+                            <!--All classes-->
+                            <h6>Full Year Prerequisites</h6>
+                            <ul>
+                                <li>
+                                    <a href="#worldHistory2">Art Foundations</a>
+                                </li>
+                                <li>
+                                    <a href="#usHistoryI">Graphics Communications I</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <hr />
+
+                        <div>
+                            <h6>Semester Electives</h6>
+                            <ul>
+                                <li><a href="#apEconomics">AP Art Prep</a></li>
+                                <li><a href="#apEUHistory">Art Concentrations</a></li>
+                                <li><a href="#apPsychology">Commercial Art</a></li>
+                                <li><a href="#apGov">Ceramics 1</a></li>
+                                <li><a href="#apUSHistory">Ceramics 2</a></li>
+                                <li><a href="#apWHistory">Digital Photography</a></li>
+                                <li><a href="#apEconomics">Digital Illustration & Painting</a></li>
+                                <li><a href="#apEUHistory">Drawing 1</a></li>
+                                <li><a href="#apPsychology">Drawing 2</a></li>
+                                <li><a href="#apGov">Exploring Fine Arts: Visual Arts</a></li>
+                                <li><a href="#apUSHistory">Painting 1</a></li>
+                                <li><a href="#apWHistory">Painting 2</a></li>
+                                <li><a href="#apUSHistory">Printmaking</a></li>
+                                <li><a href="#apWHistory">Sculpture</a></li>
+                            </ul>
+                        </div>
+
+                        <hr />
+
+                        <div>
+                            <h6>Full-year Electives</h6>
+                            <ul>
+                                <li><a href="#civics">Advanced Placement Studio Art</a></li>
+                                <li><a href="#ssSeminar-Contemp">Graphic Communications 2</a></li>
+                                <li><a href="#ssSeminar-Ethics">Honors Drawing and Painting 1</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 upcoming-events" id="socialStudiesFaculty">
+                        <h5 class="header">Art Facility</h5>
+                        <!--Teacher pages (not complete)-->
+                        <ul>
+
+                            <li><a class="link">Racheal Bellemer</a></li>
+                            <li><a class="link">Suzanne Breen</a></li>
+                            <li><a class="link">Melanie Cataldo</a></li>
+                            <li><a class="link" href="https://sites.google.com/a/wrsd.net/art-with-mrs-fusco-benoit/home">Audrey Fusco-Benoit</a></li>
+                            <li><a class="link">Brian Keddy</a></li>
+                            <li><a class="link">Carol Farricker</a>: Department Head</li>
+                            <li><a class="link">James Ryan</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+                <br>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="d-none d-md-block col-md-2"></div>
+                        <img class="col-md-8 col-sm-12" src="assets/artclasses.png">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-12 homeinfo">
+                        <h1 class="header">Prerequisite Courses</h1>
+                        <p><strong>Art Foundations (Grades 9-12): </strong>5 credits</p>
+                        <p>Students will explore the Elements and Principles of Design through a hands-on experience with art creation and production. Emphasis is placed on introductory painting and drawing focusing on subject, style, technique and creative problem solving.  Student will work both two dimensionally and three dimensionally.  This course is considered the gateway to the art electives.</p>
+                        <p><strong>Graphic Communications 1 (CP, Grades 9-12, WPP): </strong>5 credits</p>
+                        <p>This computer art course provides an introduction to the graphic arts. Emphasis is placed on the digital design process. Students learn the elements and principles of design while exploring the creative capabilities of the Adobe Creative Suite software, including Photoshop. Visual expression, problem solving, page layout, and image creation are presented. This course is a prerequisite for Graphic Communications 2. Preference will be given to students in grades 9-11. This is a required course for students in the Wachusett Partnership Program Graphics major, but students do not need to be in the WPP to take this course.</p>
+
+                        <h1 class="header">Semester Electives</h1>
+                        <p><strong>Ceramics 1  (Grades 10-12): </strong>2½ credits (Prerequisite: C- or better in Art Foundations)</p>
+                        <p>Learning to draw means observing the visual properties of forms and the spaces they occupy. This course will focus on a variety of drawing techniques and materials that will reinforce skills needed to improve observational and imaginative design. Students who take this course will not be eligible for Studio Art.</p>
+                        <p><strong>Commercial Art (CPA, Grades 10-12) : </strong>2½ credits (Prerequisite: C- or better in Art Foundations or Graphic Communications 1)</p>
+                        <p>Students will create artwork that is based on the demand for professional artists in various careers. Each project will be based on the current careers for traditional artists, such as character design, textile and product design, illustration, and visual representations in text/music/video.</p>
+                        <p><strong>Digital Illustration & Painting (CPA, Grades 10-12): </strong>2½ credits (Prerequisite: C- or better in Art Foundations or Graphic Comm. 1)</p>
+                        <p>This is a great course for both students of the digital arts and students who would like to explore computer art for the first time. Students will try both Adobe Illustrator, and Adobe Photoshop to explore creative capabilities of the software and become more familiar with the digital arts. Graphic and painterly styles will be introduced. Students can scan previously completed artwork and try a digital interpretation. Creativity, exploration, and open minds are encouraged. Drawing tablet techniques will also be a part of the course.</p>
+                        <p><strong>Digital Photography  (CPA, Grades 11-12): </strong>2½ credits (Prerequisite: Art Foundations, or Graphic Communications 1)</p>
+                        <p>This course introduces students to digital photography. Students learn camera basics as well as creative aspects of photography. Multiple genres of photography are covered, and students spend most long blocks taking pictures on photography walks near the Wachusett campus, as weather permits. Students try their hands at photojournalism by taking pictures for the school newspaper.  Photoshop image correction and enhancement techniques are covered. Students are encouraged to bring their own camera, although a limited number of "point-and-shoot" cameras are available.</p>
+                        <p><strong>Drawing 1 (Grades 10-12): </strong>2½ credits (Prerequisite: C- or better in Art Foundations or Graphic Comm. 1)</p>
+                        <p>Learning to draw means observing the visual properties of forms and the spaces they occupy. This course will focus on a variety of drawing techniques and materials that will reinforce skills needed to improve observational and imaginative design. Students who take this course will not be eligible for Studio Art.</p>
+                        <p><strong>Drawing 2  (CPA, Grades 10-12): </strong>2½ credits (Prerequisite: B- or better in Drawing I)</p>
+                        <p>A more advanced course for students particularly interested in art. A higher in depth level of drawing will be conducted through various drawing concepts, media and styles. Class emphasis is life drawing.</p>
+                        <p><strong>Exploring Fine Arts: Visual Art (Lifeskills, CLAs, Grades 10-12): </strong>2½ credits (Prerequisite for CLAs: B- or better in Art Foundations or Graphic Communications 1)</p>
+                        <p>This is a collaborative class for Lifeskills students as well as advanced art students. Lifeskills students will explore the elements and principles of design through hands-on experiences with art creation and production. Students will work both two- and three-dimensionally. A few advanced art students will be accepted into the class as CLAs.* The CLAs will assist students to create art and prepare materials, as well as develop lessons and study educational theory. Students with an interest in art education, special education, art therapy, and similar careers are encouraged to apply only through Naviance.</p>
+                        <p><strong>Painting 1 (Grades 10-12): </strong>2½ credits (Prerequisite: C- or better in Art Foundations)</p>
+                        <p>A course designed to explore basic techniques of painting. A variety of painterly techniques and materials will be used such as acrylic, watercolor, tempera and mixed media. Students who take this course will not be eligible for Studio Art.</p>
+                        <p><strong>Painting 2 (CP, Grades 11-12): </strong>2½ credits (Prerequisite: B- or better in Painting 1)</p>
+                        <p>A more advanced and intensive course for those particularly interested in art. Class concentration will be placed on a wide variety of painting mediums and painting styles leading towards a higher level of creative problem solving. Additional emphasis will be placed on personal investment.</p>
+                        <p><strong>Printmaking (Grades 10-12): </strong>2½ credits (Prerequisite: C- or better in Art Foundations or Graphic Communications 1)</p>
+                        <p>This exploratory course uncovers the painterly printmaker in all of us. Students will further develop their understanding of the basic elements and principles of design by practicing and applying the printmaking processes of monotype, intaglio, relief and other experimental methods. This course is an opportunity to combine your interest in drawing and painting skills with both invented imagery and direct observation.</p>
+                        <p><strong>Sculpture (CPA Grades 10-12): </strong>2½ credits (Prerequisite: C- or better in Art Foundations)</p>
+                        <p>This course is an exploration of art in three dimensions. The emphasis of this course is on the development of skills and creativity in the use of materials such as clay, stone, plaster, wood, found objects and wire.  Projects will focus on representational and abstract subject matter, and give students exposure to historical and contemporary artists. This course will broaden and reinforce the students understanding of the elements and principles of design. The important learning processes of creative problem solving and critical thinking will also be emphasized.</p>
+
+                        <h1 id="usHistoryI" class="header">Full-Year Electives</h1>
+                        <p><strong>Graphic Communications 2   (CPA, Grades 11-12, WPP): </strong>5 credits (Prerequisite: C- or better in Graphic Communications 1)</p>
+                        <p>This is an advanced class in computer graphics for students who want to further develop their skills in graphic design and visual expression. In addition, students design and lay out the school newspaper and create posters for WRHS theatrical productions. Beginning animation techniques will be introduced. Students are expected to be self-motivated and able to meet deadlines. Preference will be given to students in Grades 10-11. This is a required course for students in the Wachusett Partnership Program Graphics major, but students do not need to be in the WPP to take the course.</p>
+
+                        <h1 id="#" class="header">Honors and AP Electives</h1>
+                        <p><strong>Honors Drawing and Painting 1 (H, Grades 10-11): </strong>5 credits (Prerequisite: A or better in Art Foundations and art teacher approval.)</p>
+                        <p>This course covers the curriculum of Drawing 1 and Painting 1 at an honors level. It is not open to students who have previously taken Drawing 1 or Painting 1. Honors Drawing and Painting 1 students are self-motivated, have keen observational drawing skills, and are driven to develop their visual abilities at an accelerated pace. Students will work with a variety of media and techniques and will explore a range of methods and approaches in two dimensions. Students are required to complete weekly homework drawings that include working from observation, visual problem solving and independent study. Sketchbooks will be used for class notes, preliminary drawings, and research.</p>
+                        <p><strong>Art Concentrations (H, Grades 11-12): </strong>2½ credits  (Prerequisite: B- or better in Drawing 1 or Studio Art and Painting 1)</p>
+                        <p>This course is designed to challenge the student who is considering an education in the arts beyond the high school level. The main focus is on exploring problems that require students to think creatively, exercise technical excellence, sharpen observational skills, work independently, and express one’s self both visually and verbally. Students will need a positive attitude, an open mind, a willingness to work hard, diligence, responsibility, maturity, and a sense of personal commitment. A focus of the class is preparation of the college portfolio. College representatives will visit class</p>
+                        <p><strong>AP Art Prep  (H, Grades 11 – 12): </strong>2½ credits (Prerequisite: Art teacher recommendation)</p>
+                        <p>This rigorous course provides the serious art student with synthesizing artistic problems and experiences in mixed media, drawing, and painting.  This course will assist the student in developing pieces for their AP portfolio, as well as offering more thematic approaches and personal methods of working.  AP Prep runs at an honors level pace and will require a series of works to be completed outside of class.</p>
+                        <p><strong>Advanced Placement Studio Art: The Drawing Portfolio (AP, Grade 12 only): </strong>5 credits (Prerequisite: Teacher recommendation, portfolio review, B- or better in Drawing 2 or Painting 2. AP Art Prep is suggested junior year.)</p>
+                        <p>AP Studio Art is designed for students who are considering art as a field of study in college and who demonstrate proficiency in a variety of art mediums.  This full-year course helps students prepare for college through rigor and personal investment. This Advanced Placement course will follow the Advanced Placement curriculum guidelines for developing the Drawing Portfolio and will address the Breadth section of the exam but specifically focus on the Concentration and Quality sections of the portfolio. The general portfolio consists of three sections:  Section 1:  “Quality” five original pieces of work; Section 2:  “Concentration” 12 slides of original work; Section 3:  “Breadth” 12 slides of original work.</p>
+                        <br>
+                        <p>A summer assignment is a vital part of the Advanced Placement Art class. Students must prepare several works before returning to school in September. It is expected that all students will complete all the requirements of the course and submit their portfolio to the AP evaluation committee for review.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <br />
+            <footer class="wachu-green-header">
+                <h5 class="footerText">Wachusett Regional High School</h5>
+                <h6 class="footerText">1401 Main Street | Holden MA 01520 | Phone: 508-829-6771 | Fax: 508-829-4895</h6>
+                <p class="footerText">Principal, William P. <span onclick="togglememe()">Beando</span></p>
+            </footer>
         </div>
     </div>
-    <div id="loader" class="spinner">
-        <svg viewBox="-1 -1 2 2">
-            <circle class="load1" cx="0" cy="0" r=".5" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#076d00" stroke-width=".1"></circle>
-            <circle class="load2" cx="0" cy="0" r=".5" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#a4a4a4" stroke-width=".1"></circle>
-        </svg>
-    </div>
-    <div id="content" class="animsition">
-
-        <br />
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-md-12 order-sm-1 order-md-2 homeinfo">
-                    <h1 class="header">WRHS Art Department</h1>
-                    <h5 class="header">Registration now open for the 2017 WRHS Summer Art Academy</h5>
-                    <h5 class="header">Click <a href="http://www.wrsd.net/wrhs/documents/Academics/Art/wachusett_art_academy_flyer.pdf">here for the Summer Art Academy flier</a> and to see all program class descriptions.</h5>
-                    <h5 class="header">Click on the graphic below to register online for classes.</h5>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12" style="text-align: center">
-                        <a class="waves-effect waves-green" href="https://docs.google.com/forms/d/e/1FAIpQLSfGv4IwkSNoQFssDRlgeoXve-EHkzDn-FNKTaUF6F89zq-RiQ/viewform">
-                            <img class="img-fluid clickable-image" src="assets/wsaa_logo.jpg">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <hr />
-
-            <div class="row">
-                <div class="col-md-6 col-sm-12 upcoming-events" id="socialStudiesClasses">
-                    <h5 class="header">Art Classes</h5>
-
-                    <div>
-                        <!--All classes-->
-                        <h6>Full Year Prerequisites</h6>
-                        <ul>
-                            <li>
-                                <a href="#worldHistory2">Art Foundations</a>
-                            </li>
-                            <li>
-                                <a href="#usHistoryI">Graphics Communications I</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <hr />
-
-                    <div>
-                        <h6>Semester Electives</h6>
-                        <ul>
-                            <li><a href="#apEconomics">AP Art Prep</a></li>
-                            <li><a href="#apEUHistory">Art Concentrations</a></li>
-                            <li><a href="#apPsychology">Commercial Art</a></li>
-                            <li><a href="#apGov">Ceramics 1</a></li>
-                            <li><a href="#apUSHistory">Ceramics 2</a></li>
-                            <li><a href="#apWHistory">Digital Photography</a></li>
-                            <li><a href="#apEconomics">Digital Illustration & Painting</a></li>
-                            <li><a href="#apEUHistory">Drawing 1</a></li>
-                            <li><a href="#apPsychology">Drawing 2</a></li>
-                            <li><a href="#apGov">Exploring Fine Arts: Visual Arts</a></li>
-                            <li><a href="#apUSHistory">Painting 1</a></li>
-                            <li><a href="#apWHistory">Painting 2</a></li>
-                            <li><a href="#apUSHistory">Printmaking</a></li>
-                            <li><a href="#apWHistory">Sculpture</a></li>
-                        </ul>
-                    </div>
-
-                    <hr />
-
-                    <div>
-                        <h6>Full-year Electives</h6>
-                        <ul>
-                            <li><a href="#civics">Advanced Placement Studio Art</a></li>
-                            <li><a href="#ssSeminar-Contemp">Graphic Communications 2</a></li>
-                            <li><a href="#ssSeminar-Ethics">Honors Drawing and Painting 1</a></li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12 upcoming-events" id="socialStudiesFaculty">
-                    <h5 class="header">Art Facility</h5>
-                    <!--Teacher pages (not complete)-->
-                    <ul>
-
-                        <li><a class="link">Racheal Bellemer</a></li>
-                        <li><a class="link">Suzanne Breen</a></li>
-                        <li><a class="link">Melanie Cataldo</a></li>
-                        <li><a class="link" href="https://sites.google.com/a/wrsd.net/art-with-mrs-fusco-benoit/home">Audrey Fusco-Benoit</a></li>
-                        <li><a class="link">Brian Keddy</a></li>
-                        <li><a class="link">Carol Farricker</a>: Department Head</li>
-                        <li><a class="link">James Ryan</a></li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-            <br>
-            <br>
-            <div class="container">
-                <div class="row">
-                    <div class="d-none d-md-block col-md-2"></div>
-                    <img class="col-md-8 col-sm-12" src="assets/artclasses.png">
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-md-12 homeinfo">
-                    <h1 class="header">Prerequisite Courses</h1>
-                    <p><strong>Art Foundations (Grades 9-12): </strong>5 credits</p>
-                    <p>Students will explore the Elements and Principles of Design through a hands-on experience with art creation and production. Emphasis is placed on introductory painting and drawing focusing on subject, style, technique and creative problem solving.  Student will work both two dimensionally and three dimensionally.  This course is considered the gateway to the art electives.</p>
-                    <p><strong>Graphic Communications 1 (CP, Grades 9-12, WPP): </strong>5 credits</p>
-                    <p>This computer art course provides an introduction to the graphic arts. Emphasis is placed on the digital design process. Students learn the elements and principles of design while exploring the creative capabilities of the Adobe Creative Suite software, including Photoshop. Visual expression, problem solving, page layout, and image creation are presented. This course is a prerequisite for Graphic Communications 2. Preference will be given to students in grades 9-11. This is a required course for students in the Wachusett Partnership Program Graphics major, but students do not need to be in the WPP to take this course.</p>
-
-                    <h1 class="header">Semester Electives</h1>
-                    <p><strong>Ceramics 1  (Grades 10-12): </strong>2½ credits (Prerequisite: C- or better in Art Foundations)</p>
-                    <p>Learning to draw means observing the visual properties of forms and the spaces they occupy. This course will focus on a variety of drawing techniques and materials that will reinforce skills needed to improve observational and imaginative design. Students who take this course will not be eligible for Studio Art.</p>
-                    <p><strong>Commercial Art (CPA, Grades 10-12) : </strong>2½ credits (Prerequisite: C- or better in Art Foundations or Graphic Communications 1)</p>
-                    <p>Students will create artwork that is based on the demand for professional artists in various careers. Each project will be based on the current careers for traditional artists, such as character design, textile and product design, illustration, and visual representations in text/music/video.</p>
-                    <p><strong>Digital Illustration & Painting (CPA, Grades 10-12): </strong>2½ credits (Prerequisite: C- or better in Art Foundations or Graphic Comm. 1)</p>
-                    <p>This is a great course for both students of the digital arts and students who would like to explore computer art for the first time. Students will try both Adobe Illustrator, and Adobe Photoshop to explore creative capabilities of the software and become more familiar with the digital arts. Graphic and painterly styles will be introduced. Students can scan previously completed artwork and try a digital interpretation. Creativity, exploration, and open minds are encouraged. Drawing tablet techniques will also be a part of the course.</p>
-                    <p><strong>Digital Photography  (CPA, Grades 11-12): </strong>2½ credits (Prerequisite: Art Foundations, or Graphic Communications 1)</p>
-                    <p>This course introduces students to digital photography. Students learn camera basics as well as creative aspects of photography. Multiple genres of photography are covered, and students spend most long blocks taking pictures on photography walks near the Wachusett campus, as weather permits. Students try their hands at photojournalism by taking pictures for the school newspaper.  Photoshop image correction and enhancement techniques are covered. Students are encouraged to bring their own camera, although a limited number of "point-and-shoot" cameras are available.</p>
-                    <p><strong>Drawing 1 (Grades 10-12): </strong>2½ credits (Prerequisite: C- or better in Art Foundations or Graphic Comm. 1)</p>
-                    <p>Learning to draw means observing the visual properties of forms and the spaces they occupy. This course will focus on a variety of drawing techniques and materials that will reinforce skills needed to improve observational and imaginative design. Students who take this course will not be eligible for Studio Art.</p>
-                    <p><strong>Drawing 2  (CPA, Grades 10-12): </strong>2½ credits (Prerequisite: B- or better in Drawing I)</p>
-                    <p>A more advanced course for students particularly interested in art. A higher in depth level of drawing will be conducted through various drawing concepts, media and styles. Class emphasis is life drawing.</p>
-                    <p><strong>Exploring Fine Arts: Visual Art (Lifeskills, CLAs, Grades 10-12): </strong>2½ credits (Prerequisite for CLAs: B- or better in Art Foundations or Graphic Communications 1)</p>
-                    <p>This is a collaborative class for Lifeskills students as well as advanced art students. Lifeskills students will explore the elements and principles of design through hands-on experiences with art creation and production. Students will work both two- and three-dimensionally. A few advanced art students will be accepted into the class as CLAs.* The CLAs will assist students to create art and prepare materials, as well as develop lessons and study educational theory. Students with an interest in art education, special education, art therapy, and similar careers are encouraged to apply only through Naviance.</p>
-                    <p><strong>Painting 1 (Grades 10-12): </strong>2½ credits (Prerequisite: C- or better in Art Foundations)</p>
-                    <p>A course designed to explore basic techniques of painting. A variety of painterly techniques and materials will be used such as acrylic, watercolor, tempera and mixed media. Students who take this course will not be eligible for Studio Art.</p>
-                    <p><strong>Painting 2 (CP, Grades 11-12): </strong>2½ credits (Prerequisite: B- or better in Painting 1)</p>
-                    <p>A more advanced and intensive course for those particularly interested in art. Class concentration will be placed on a wide variety of painting mediums and painting styles leading towards a higher level of creative problem solving. Additional emphasis will be placed on personal investment.</p>
-                    <p><strong>Printmaking (Grades 10-12): </strong>2½ credits (Prerequisite: C- or better in Art Foundations or Graphic Communications 1)</p>
-                    <p>This exploratory course uncovers the painterly printmaker in all of us. Students will further develop their understanding of the basic elements and principles of design by practicing and applying the printmaking processes of monotype, intaglio, relief and other experimental methods. This course is an opportunity to combine your interest in drawing and painting skills with both invented imagery and direct observation.</p>
-                    <p><strong>Sculpture (CPA Grades 10-12): </strong>2½ credits (Prerequisite: C- or better in Art Foundations)</p>
-                    <p>This course is an exploration of art in three dimensions. The emphasis of this course is on the development of skills and creativity in the use of materials such as clay, stone, plaster, wood, found objects and wire.  Projects will focus on representational and abstract subject matter, and give students exposure to historical and contemporary artists. This course will broaden and reinforce the students understanding of the elements and principles of design. The important learning processes of creative problem solving and critical thinking will also be emphasized.</p>
-
-                    <h1 id="usHistoryI" class="header">Full-Year Electives</h1>
-                    <p><strong>Graphic Communications 2   (CPA, Grades 11-12, WPP): </strong>5 credits (Prerequisite: C- or better in Graphic Communications 1)</p>
-                    <p>This is an advanced class in computer graphics for students who want to further develop their skills in graphic design and visual expression. In addition, students design and lay out the school newspaper and create posters for WRHS theatrical productions. Beginning animation techniques will be introduced. Students are expected to be self-motivated and able to meet deadlines. Preference will be given to students in Grades 10-11. This is a required course for students in the Wachusett Partnership Program Graphics major, but students do not need to be in the WPP to take the course.</p>
-
-                    <h1 id="#" class="header">Honors and AP Electives</h1>
-                    <p><strong>Honors Drawing and Painting 1 (H, Grades 10-11): </strong>5 credits (Prerequisite: A or better in Art Foundations and art teacher approval.)</p>
-                    <p>This course covers the curriculum of Drawing 1 and Painting 1 at an honors level. It is not open to students who have previously taken Drawing 1 or Painting 1. Honors Drawing and Painting 1 students are self-motivated, have keen observational drawing skills, and are driven to develop their visual abilities at an accelerated pace. Students will work with a variety of media and techniques and will explore a range of methods and approaches in two dimensions. Students are required to complete weekly homework drawings that include working from observation, visual problem solving and independent study. Sketchbooks will be used for class notes, preliminary drawings, and research.</p>
-                    <p><strong>Art Concentrations (H, Grades 11-12): </strong>2½ credits  (Prerequisite: B- or better in Drawing 1 or Studio Art and Painting 1)</p>
-                    <p>This course is designed to challenge the student who is considering an education in the arts beyond the high school level. The main focus is on exploring problems that require students to think creatively, exercise technical excellence, sharpen observational skills, work independently, and express one’s self both visually and verbally. Students will need a positive attitude, an open mind, a willingness to work hard, diligence, responsibility, maturity, and a sense of personal commitment. A focus of the class is preparation of the college portfolio. College representatives will visit class</p>
-                    <p><strong>AP Art Prep  (H, Grades 11 – 12): </strong>2½ credits (Prerequisite: Art teacher recommendation)</p>
-                    <p>This rigorous course provides the serious art student with synthesizing artistic problems and experiences in mixed media, drawing, and painting.  This course will assist the student in developing pieces for their AP portfolio, as well as offering more thematic approaches and personal methods of working.  AP Prep runs at an honors level pace and will require a series of works to be completed outside of class.</p>
-                    <p><strong>Advanced Placement Studio Art: The Drawing Portfolio (AP, Grade 12 only): </strong>5 credits (Prerequisite: Teacher recommendation, portfolio review, B- or better in Drawing 2 or Painting 2. AP Art Prep is suggested junior year.)</p>
-                    <p>AP Studio Art is designed for students who are considering art as a field of study in college and who demonstrate proficiency in a variety of art mediums.  This full-year course helps students prepare for college through rigor and personal investment. This Advanced Placement course will follow the Advanced Placement curriculum guidelines for developing the Drawing Portfolio and will address the Breadth section of the exam but specifically focus on the Concentration and Quality sections of the portfolio. The general portfolio consists of three sections:  Section 1:  “Quality” five original pieces of work; Section 2:  “Concentration” 12 slides of original work; Section 3:  “Breadth” 12 slides of original work.</p>
-                    <br>
-                    <p>A summer assignment is a vital part of the Advanced Placement Art class. Students must prepare several works before returning to school in September. It is expected that all students will complete all the requirements of the course and submit their portfolio to the AP evaluation committee for review.</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <br />
-        <footer class="wachu-green-header">
-            <h5 class="footerText">Wachusett Regional High School</h5>
-            <h6 class="footerText">1401 Main Street | Holden MA 01520 | Phone: 508-829-6771 | Fax: 508-829-4895</h6>
-            <p class="footerText">Principal, William P. <span onclick="togglememe()">Beando</span></p>
-        </footer>
-    </div>
-
 </body>
 </html>
