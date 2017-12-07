@@ -5,6 +5,12 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+body{
+    background-image: url(../assets/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 * {
     transition: all .5s;
     word-wrap: break-word;
@@ -42,16 +48,32 @@ h1 {
 }
 
 .dropdown-item:hover {
+    box-shadow: 0px 0px 0px 2px black inset !important;
+    color: black !important;
+    background-color: white !important;
 }
 
 .dropdown-item:active {
+    color: black !important;
+    box-shadow: 0px 0px 0px 3px black inset !important;
+    background-color: white !important;
+}
+
+.dropdown-item{
+padding: 10px !important;
+margin: 0 !important;
+
 }
 
 .navbar {
-    padding: 0px 20px 0px 20px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    float: left;
+    width: 100%;
+    z-index: 9999;
+    transition: background-color .5s;
 }
-
-
 .navbarbutton {
     color: white;
     font-family: "Segoe UI";
@@ -59,22 +81,22 @@ h1 {
     font-family: 'Roboto', sans-serif;
     transition: all .2s ease-out;
     background-color: var(--wachusettGreen);
-    margin: 0px;
+    margin: 10px;
 }
 
     .navbarbutton:hover {
         font-family: "Segoe UI";
-        box-shadow: 0px 0px 0px 2px black inset;
-        color: black;
+        box-shadow: 0px 0px 3px 0px black;
+        color: white;
         text-decoration: none;
         font-family: 'Roboto', sans-serif;
-        background-color: white;
+        background-color: var(--wachusettGreen);
     }
 
 .navbarbutton-cur {
     font-family: "Segoe UI";
     color: black;
-    box-shadow: 0px 0px 0px 3px black inset;
+    box-shadow: 0px 0px 0px 3px black;
     background-color: white;
     font-family: 'Roboto', sans-serif;
 }
@@ -83,18 +105,114 @@ h1 {
 .navbarbutton:active {
     font-family: "Segoe UI";
     color: black;
-    box-shadow: 0px 0px 0px 3px black inset;
+    box-shadow: 0px 0px 2px 0px black;
     background-color: white;
     font-family: 'Roboto', sans-serif;
 }
+    /*When you scroll down a little bit, the navbar becomes a bit smaller and has a background*/
+    .navbar.scrolled {
+        background-color: var(--wachusettGreen);
+    }
 
+        .navbar.scrolled .navbarbutton {
+            margin: 0px;
+        }
+
+            .navbar.scrolled .navbarbutton:hover {
+                box-shadow: 0px 0px 0px 2px black inset;
+                color: black;
+                background-color: white;
+            }
+
+            .navbar.scrolled .navbarbutton:active {
+                color: black;
+                box-shadow: 0px 0px 0px 3px black inset;
+                background-color: white;
+            }
+
+        .navbar.scrolled .navbarbutton-cur {
+            color: black;
+            box-shadow: 0px 0px 0px 3px black inset;
+            background-color: white;
+        }
+
+
+/*Navbar should look different on mobile*/
+@media (max-width: 992px) {
+    .navbar {
+        background-color: var(--wachusettGreen);
+    }
+
+    .navbarbutton {
+        color: white;
+        font-family: "Segoe UI";
+        padding: 5px 10px 5px 10px;
+        font-family: 'Roboto', sans-serif;
+        transition: all .2s ease-out;
+        background-color: var(--wachusettGreen);
+        margin: 0px;
+    }
+
+        .navbarbutton:hover {
+            font-family: "Segoe UI";
+            box-shadow: 0px 0px 0px 2px black inset;
+            color: black;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            background-color: white;
+        }
+
+    .navbarbutton-cur {
+        font-family: "Segoe UI";
+        color: black;
+        box-shadow: 0px 0px 0px 3px black inset;
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    .navbarbutton:active {
+        font-family: "Segoe UI";
+        color: black;
+        box-shadow: 0px 0px 0px 3px black inset;
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+/*When you scroll down a little bit, the navbar becomes a bit smaller and has a background*/
+.navbar.scrolled {
+    background-color: var(--wachusettGreen);
+}
+
+    .navbar.scrolled .navbarbutton {
+        margin: 0px;
+    }
+
+        .navbar.scrolled .navbarbutton:hover {
+            box-shadow: 0px 0px 0px 2px black inset;
+            color: black;
+            background-color: white;
+        }
+
+        .navbar.scrolled .navbarbutton:active {
+            color: black;
+            box-shadow: 0px 0px 0px 3px black inset;
+            background-color: white;
+        }
+
+    .navbar.scrolled .navbarbutton-cur {
+        color: black;
+        box-shadow: 0px 0px 0px 3px black inset;
+        background-color: white;
+    }
 
 .newsbanner {
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: center;
     padding: 10px;
-    box-shadow: 0px 6px 20px 0px #868e96;
+    box-shadow: 7px 7px 1px rgba(10,10,10,0.25);
 }
 
 .wachu-green {
@@ -105,21 +223,23 @@ h1 {
 .wachu-green-header {
     background-color: #337337;
     padding: 1px;
-    box-shadow: 0px 6px 20px 0px #868e96;
+    box-shadow: 7px 7px 1px rgba(10,10,10,0.25);
 }
 
 .upcoming-events {
     border: 4px solid var(--wachusettGreen);
-    box-shadow: 0px 0px 20px 0px #868e96;
+    box-shadow: 7px 7px 1px rgba(10,10,10,0.25);
+    background-color: white;
 }
 
 .upcoming-events-header {
     padding: 5px;
     text-align: center;
+
 }
 
     .upcoming-events-header:hover {
-        box-shadow: 0px 6px 20px 0px #868e96;
+        box-shadow: 7px 7px 1px rgba(10,10,10,0.25);
     }
 
 .upcoming-events-row {
@@ -160,7 +280,7 @@ hr {
 }
 
 footer {
-    box-shadow: 0px 0px 20px 0px #868e96;
+    box-shadow: 7px 7px 1px rgba(10,10,10,0.25);
 }
 
 
@@ -227,7 +347,7 @@ footer {
 .schedule {
     border: solid;
     border-color: black;
-    box-shadow: 0px 0px 20px 0px #868e96;
+    box-shadow: 7px 7px 1px rgba(10,10,10,0.25);
 }
 
     .schedule td, .schedule th, .schedule tr {
@@ -272,4 +392,24 @@ li a {
     border-radius: 50px !important;
     background: white !important;
     padding: 5px !important;
+}
+.pgcontent {
+    padding-top: 80px;
+    margin: 0px 10px 0px 6px
+}
+
+.homeinfo {
+    background-color: white;
+    border: solid var(--wachusettGreen) 5px;
+    padding: 10px;
+    margin: 0px 4px 0px 4px;
+    box-shadow: 7px 7px 1px rgba(10,10,10,0.25);
+}
+
+.clickable-image {
+    background-color: white;
+    border: solid var(--wachusettGreen) 5px;
+    padding: 10px;
+    margin: 4px;
+    box-shadow: 7px 7px 1px rgba(10,10,10,0.25);
 }

@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles/styles.css" />
@@ -22,7 +22,7 @@
 <body>
 
     <header>
-        <div class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCol" aria-controls="navbarCol" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -62,74 +62,76 @@
             </div>
         </div>
     </header>
-    <div class="wachu-green-header">
-        <!--Header: wachu-green-header fills the background with the same green as is in the wrhsheader920.jpg
+    <div class="pgcontent">
+        <div class="wachu-green-header">
+            <!--Header: wachu-green-header fills the background with the same green as is in the wrhsheader920.jpg
             to make it seamless across all widths-->
-        <div class="container">
-            <img src="assets/wrhsheader920.jpg" width="100%">
+            <div class="container">
+                <img src="assets/wrhsheader920.jpg" width="100%">
+            </div>
         </div>
-    </div>
-    <div id="loader" class="spinner">
-        <svg viewBox="-1 -1 2 2">
-            <circle class="load1" cx="0" cy="0" r=".5" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#076d00" stroke-width=".1"></circle>
-            <circle class="load2" cx="0" cy="0" r=".5" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#a4a4a4" stroke-width=".1"></circle>
-        </svg>
-    </div>
-    <div id="content" class="animsition">
-        <br />
+        <div id="loader" class="spinner">
+            <svg viewBox="-1 -1 2 2">
+                <circle class="load1" cx="0" cy="0" r=".5" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#076d00" stroke-width=".1"></circle>
+                <circle class="load2" cx="0" cy="0" r=".5" fill="none" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" stroke="#a4a4a4" stroke-width=".1"></circle>
+            </svg>
+        </div>
+        <div id="content" class="animsition">
+            <br />
 
-        <div class="container">
+            <div class="container">
 
-            <div class="row">
+                <div class="row">
 
 
-                <div class="col-md-12 homeinfo">
-                    <h1 class="header">Welcome to the new site!</h1>
+                    <div class="col-md-12 homeinfo">
+                        <h1 class="header">Welcome to the new site!</h1>
 
-                    <hr />
-                    <h3 class="header">The Navigation bar is now at the top of the webpage.</h3>
-                    <div class="row">
+                        <hr />
+                        <h3 class="header">The Navigation bar is now at the top of the webpage.</h3>
+                        <div class="row">
 
-                        <div class="col-md-6">
-                            <img class="img-fluid" src="assets/help/nav_old.png" />
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="assets/help/nav_old.png" />
+                            </div>
+
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="assets/help/nav_new.png" />
+                            </div>
+
                         </div>
 
-                        <div class="col-md-6">
-                            <img class="img-fluid" src="assets/help/nav_new.png" />
-                        </div>
+                        <h3 class="header">On mobile, it is hidden under this icon, clicking it will reveal it.</h3>
 
+                        <img class="img-fluid" src="assets/help/nav_new_mobile.png" />
+
+                        <h3 class="header">If you can't find a link that was on the old site's navigation bar, you will likely find it on the <strong>More Links</strong> page.</h3>
+                        <img class="img-fluid" src="assets/help/nav_new_more.png" />
+
+                        <hr />
+
+                        <h3 class="header">The Morning Announcements are found on the main page. Clicking on the text "Morning Announcements" will bring you to the full list of the morning announcements for the current date.</h3>
+                        <img class="img-fluid" src="assets/help/morning_announcements_new.png" />
+
+                        <hr />
+
+                        <h3 class="header">The Upcoming Events bar is now on the left of the home page. Clicking on "Upcoming Events" will bring you to the full calendar.</h3>
+                        <img class="img-fluid" src="assets/help/upcoming_events_new.png" />
                     </div>
-
-                    <h3 class="header">On mobile, it is hidden under this icon, clicking it will reveal it.</h3>
-
-                    <img class="img-fluid" src="assets/help/nav_new_mobile.png" />
-
-                    <h3 class="header">If you can't find a link that was on the old site's navigation bar, you will likely find it on the <strong>More Links</strong> page.</h3>
-                    <img class="img-fluid" src="assets/help/nav_new_more.png" />
-
-                    <hr />
-
-                    <h3 class="header">The Morning Announcements are found on the main page. Clicking on the text "Morning Announcements" will bring you to the full list of the morning announcements for the current date.</h3>
-                    <img class="img-fluid" src="assets/help/morning_announcements_new.png" />
-
-                    <hr />
-
-                    <h3 class="header">The Upcoming Events bar is now on the left of the home page. Clicking on "Upcoming Events" will bring you to the full calendar.</h3>
-                    <img class="img-fluid" src="assets/help/upcoming_events_new.png" />
                 </div>
+
             </div>
 
+
+            <br />
+
+            <!--Footer-->
+            <footer class="wachu-green-header">
+                <h5 class="footerText">Wachusett Regional High School</h5>
+                <h6 class="footerText">1401 Main Street | Holden MA 01520 | Phone: 508-829-6771 | Fax: 508-829-4895</h6>
+                <p class="footerText">Principal, William P. <span onclick="togglememe()">Beando</span></p>
+            </footer>
         </div>
-
-
-        <br />
-
-        <!--Footer-->
-        <footer class="wachu-green-header">
-            <h5 class="footerText">Wachusett Regional High School</h5>
-            <h6 class="footerText">1401 Main Street | Holden MA 01520 | Phone: 508-829-6771 | Fax: 508-829-4895</h6>
-            <p class="footerText">Principal, William P. <span onclick="togglememe()">Beando</span></p>
-        </footer>
     </div>
 </body>
 </html>
