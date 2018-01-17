@@ -6,9 +6,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body{
-    background-image: url(../assets/background.jpg);
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 * {
