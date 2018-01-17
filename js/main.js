@@ -86,7 +86,7 @@ function washington() {
 	// george washington looking study hall monitor
     document.body.innerHTML = "<h1 style=\"text-align: center\">lets get going! get to class!</h1>" +
         "<img width=\"100%\" height=\"400px\" src=\"https://upload.wikimedia.org/wikipedia/commons/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg\"/>";
-} 
+}
 
 // This calls the page transitions
 $(document).ready(function () {
