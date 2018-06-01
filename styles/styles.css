@@ -40,7 +40,6 @@ h1 {
 /*Dropdown Menu*/
 .dropdown-menu {
     animation: dropdown .2s ease-in-out;
-    background-color: var(--wachusettGreen);
     border: solid;
     border-radius: 0px;
     border-color: white;
@@ -75,40 +74,64 @@ margin: 0 !important;
     transition: background-color .5s;
 }
 .navbarbutton {
-    color: white;
-    font-family: "Segoe UI";
+    color: black;
+    background-color: white;
     padding: 10px;
-    font-family: 'Roboto', sans-serif;
-    transition: all .2s ease-out;
-    background-color: var(--wachusettGreen);
-    margin: 10px;
+    margin: 5px;
+    background-image: radial-gradient(circle, white 80%, lightgray 81%);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: 50%;
+    transition: all .2s;
+    border: none;
+    border-radius: 1px;
 }
 
+
     .navbarbutton:hover {
-        font-family: "Segoe UI";
-        box-shadow: 0px 0px 3px 0px black;
-        color: white;
+        color: black;
         text-decoration: none;
-        font-family: 'Roboto', sans-serif;
-        background-color: var(--wachusettGreen);
+        box-shadow: 0px 2px 5px 0px black;
+        background-size: 100%;
+        border-radius: 30px;
+        box-shadow: 0 1px 3px 0px #607D8B;
+    }
+
+    .navbarbutton:active {
+        background-color: lightgray;
+        background-image: radial-gradient(circle, white 80%, lightgray 81%);
+        background-repeat: no-repeat;
+        background-size: 200%;
+        background-position: 50%;
     }
 
 .navbarbutton-cur {
-    font-family: "Segoe UI";
-    color: black;
-    box-shadow: 0px 0px 0px 3px black;
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0 1px 3px 0px #607D8B;
+    background-image: radial-gradient(circle, var(--wachusettGreen) 80%, #114A15 81%);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: 50%;
+    background-color: #114A15;
+    border-radius: 30px;
+    transition: all .2s;
+    border: none;
 }
 
 
-.navbarbutton:active {
-    font-family: "Segoe UI";
-    color: black;
-    box-shadow: 0px 0px 2px 0px black;
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
-}
+    .navbarbutton-cur:hover {
+        color: white;
+        text-decoration: none;
+        box-shadow: 0 1px 3px 0px #607D8B;
+    }
+
+    .navbarbutton-cur:active {
+        background-image: radial-gradient(circle, var(--wachusettGreen) 80%, #114A15 81%);
+        background-size: 200%;
+        background-repeat: no-repeat;
+    }
     /*When you scroll down a little bit, the navbar becomes a bit smaller and has a background*/
     .navbar.scrolled {
         background-color: var(--wachusettGreen);
@@ -223,6 +246,7 @@ margin: 0 !important;
     color: #FFFFFF;
     text-align: center;
     padding: 10px;
+    border-radius: 30px;
     box-shadow: 7px 7px 1px rgba(10,10,10,0.25);
 }
 
