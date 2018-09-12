@@ -4,6 +4,16 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face {
+    font-family: "Google";
+    src: url("../Fonts/GoogleSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "GoogleMed";
+    src: url("../Fonts/GoogleSans-Medium.ttf");
+}
+
 
 body{
 }
@@ -85,6 +95,7 @@ margin: 0 !important;
     transition: all .2s;
     border: none;
     border-radius: 1px;
+    font-family: Google;
 }
 
 
@@ -132,32 +143,7 @@ margin: 0 !important;
         background-size: 200%;
         background-repeat: no-repeat;
     }
-    /*When you scroll down a little bit, the navbar becomes a bit smaller and has a background*/
-    .navbar.scrolled {
-        background-color: var(--wachusettGreen);
-    }
 
-        .navbar.scrolled .navbarbutton {
-            margin: 0px;
-        }
-
-            .navbar.scrolled .navbarbutton:hover {
-                box-shadow: 0px 0px 0px 2px black inset;
-                color: black;
-                background-color: white;
-            }
-
-            .navbar.scrolled .navbarbutton:active {
-                color: black;
-                box-shadow: 0px 0px 0px 3px black inset;
-                background-color: white;
-            }
-
-        .navbar.scrolled .navbarbutton-cur {
-            color: black;
-            box-shadow: 0px 0px 0px 3px black inset;
-            background-color: white;
-        }
 
 
 
@@ -168,39 +154,29 @@ margin: 0 !important;
     }
 
     .navbarbutton {
-        color: white;
-        font-family: "Segoe UI";
-        padding: 5px 10px 5px 10px;
-        font-family: 'Roboto', sans-serif;
-        transition: all .2s ease-out;
-        background-color: var(--wachusettGreen);
-        margin: 0px;
+        margin: 2px;
+        border-radius:30px;
+        color:black;
     }
 
         .navbarbutton:hover {
-            font-family: "Segoe UI";
             box-shadow: 0px 0px 0px 2px black inset;
             color: black;
-            text-decoration: none;
-            font-family: 'Roboto', sans-serif;
             background-color: white;
         }
 
     .navbarbutton-cur {
         font-family: "Segoe UI";
-        color: black;
-        box-shadow: 0px 0px 0px 3px black inset;
+        color: white;
+        box-shadow: 0px 0px 0px 3px white inset;
         background-color: white;
-        font-family: 'Roboto', sans-serif;
     }
 
 
     .navbarbutton:active {
-        font-family: "Segoe UI";
-        color: black;
+        color: white;
         box-shadow: 0px 0px 0px 3px black inset;
         background-color: white;
-        font-family: 'Roboto', sans-serif;
     }
 }
 
@@ -220,7 +196,9 @@ margin: 0 !important;
 }
 
     .navbar.scrolled .navbarbutton {
-        margin: 0px;
+        margin: 2px;
+        border-radius:30px;
+        color:black;
     }
 
         .navbar.scrolled .navbarbutton:hover {
@@ -236,8 +214,8 @@ margin: 0 !important;
         }
 
     .navbar.scrolled .navbarbutton-cur {
-        color: black;
-        box-shadow: 0px 0px 0px 3px black inset;
+        color: white;
+        box-shadow: 0px 0px 0px 3px white inset;
         background-color: white;
     }
 
@@ -246,8 +224,9 @@ margin: 0 !important;
     color: #FFFFFF;
     text-align: center;
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 15px;
     box-shadow: 7px 7px 1px rgba(10,10,10,0.25);
+    font-family: GoogleMed;
 }
 
 .wachu-green {
@@ -279,7 +258,7 @@ margin: 0 !important;
 .upcoming-events-header {
     padding: 5px;
     text-align: center;
-
+    font-family: GoogleMed;
 }
 
     .upcoming-events-header:hover {
@@ -386,6 +365,7 @@ footer {
 
 .header {
     text-align: center;
+    font-family: GoogleMed;
 }
 
 /*Bell Schedules*/
