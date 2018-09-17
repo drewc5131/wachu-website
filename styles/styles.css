@@ -6,12 +6,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @font-face {
     font-family: "Google";
-    src: url("../Fonts/GoogleSans-Regular.ttf");
+    src: url("../fonts/GoogleSans-Regular.ttf");
 }
 
 @font-face {
     font-family: "GoogleMed";
-    src: url("../Fonts/GoogleSans-Medium.ttf");
+    src: url("../fonts/GoogleSans-Medium.ttf");
 }
 
 
