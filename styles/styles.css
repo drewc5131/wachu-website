@@ -246,7 +246,11 @@ margin: 0 !important;
         border: 4px solid var(--wachusettGreen);
         box-shadow: 7px 7px 1px rgba(10,10,10,0.25);
         background-color: white;
+
     }
+    
+    .dropdown-menu{
+     border: 4px solid var(--wachusettGreen);box-shadow: 7px 7px 1px rgba(10,10,10,0.25);}
 }
 @media(max-width: 768px){
     .upcoming-events {
