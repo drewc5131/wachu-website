@@ -437,3 +437,118 @@ li a {
     margin: 4px;
     box-shadow: 7px 7px 1px rgba(10,10,10,0.25);
 }
+
+.home-button{
+    padding:10px;
+    box-shadow: 3px 3px 5px 0px rgba(10,10,10,0.25);
+    display: inline-block;
+    text-decoration: none !important;
+    transition: all .5s;
+    margin: 10px;
+    
+    border-radius:20px;  
+    margin-left: auto;
+    margin-right: auto;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-family:GoogleMed;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running;
+}
+.home-button:hover{
+    transform:scale(1.1) ;
+    box-shadow: 3px 3px 5px 2px rgba(10,10,10,0.25);
+}
+
+.home-button-image{
+    
+    width: 400px;
+    border-radius:20px;   
+        animation-name: fadein;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running;
+}
+
+
+.home-button-text{
+    text-decoration: none !important;
+    text-align: center;
+    font-size:22px;
+    margin:0px;
+    padding:2px;
+}
+
+@media (max-width: 992px) {
+    .home-button{
+    display: block;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    }
+    .home-button-image{
+    width: 100%;
+    }
+}
+
+.main-button{
+    padding:10px;
+    box-shadow: 3px 3px 5px 0px rgba(10,10,10,0.25);
+    display: inline-block;
+    text-decoration: none !important;
+    transition: all .5s;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-family:GoogleMed;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running;
+}
+.main-button:hover{
+    transform:scale(1.1) ;
+    box-shadow: 3px 3px 5px 2px rgba(10,10,10,0.25);
+}
+
+.films-list{
+}
+
+.film-silent {
+    background-image: linear-gradient(to right, #237A57 0%, var(--wachusettGreen) 51%, var(--wachusettGreen) 100%);
+    color:white;
+    background-size: 200% auto;
+}
+
+.film-silent:hover{
+    color:white;
+    background-position: right center;
+}
+
+.film-short {
+    background-image: linear-gradient(to right, #FFEE2F 0%, #DD2476 51%, #DD2476 100%);
+    color:white;
+    background-size: 200% auto;
+}
+
+.film-short:hover{
+    color:white;
+    background-position: right center;
+}
